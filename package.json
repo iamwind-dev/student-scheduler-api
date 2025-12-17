@@ -1,0 +1,28 @@
+{
+  "name": "student-scheduler-api",
+  "version": "1.0.0",
+  "description": "Student Scheduler API - Azure SQL Database",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:func": "func start",
+    "start:dev": "node server.js",
+    "start:prod": "NODE_ENV=production node server.js",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/functions": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^5.2.1",
+    "mssql": "^12.0.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "azure-functions-core-tools": "^4.x"
+  }
+}

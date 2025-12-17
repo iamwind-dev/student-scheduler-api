@@ -1,0 +1,412 @@
+/**
+ * SCHEDULE RECOMMENDATION API ENDPOINTS v2.0
+ * Professional AI-powered schedule generation and management
+ */
+
+const { app } = require('@azure/functions');
+const { AuthenticationService } = require('../services/auth-service');
+const { ScheduleService } = require('../services/schedule-service');
+const { ResponseHelper } = require('../utils/response-helper');
+const { ValidationHelper } = require('../utils/validation-helper');
+
+// Initialize services
+const authService = new AuthenticationService();
+const scheduleService = new ScheduleService();
+const response = new ResponseHelper();
+const validator = new ValidationHelper();
+
+/**
+ * POST /api/schedules/generate
+ * Generate schedule recommendations using AI algorithms
+ */
+app.http('schedules-generate', {
+    methods: ['POST'],
+    route: 'schedules/generate',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const body = await request.json();
+
+            // Validate request body
+            const validation = validator.validateScheduleGenerationRequest(body);
+            if (!validation.isValid) {
+                return response.validationError(validation.errors);
+            }
+
+            // Generate schedule recommendations
+            const generationParams = {
+                userID: request.user.userID,
+                semesterCode: body.semesterCode,
+                useExistingPreferences: body.useExistingPreferences !== false,
+                customPreferences: body.customPreferences,
+                algorithmType: body.algorithmType || 'balanced',
+                maxRecommendations: body.maxRecommendations || 5,
+                includeAlternatives: body.includeAlternatives !== false
+            };
+
+            const recommendations = await scheduleService.generateScheduleRecommendations(generationParams);
+
+            return response.success(recommendations, 'Schedule recommendations generated successfully');
+
+        } catch (error) {
+            context.log.error('Generate schedules error:', error.message);
+
+            if (error.message.includes('No preferences found')) {
+                return response.badRequest('Please set your preferences first');
+            }
+
+            if (error.message.includes('No available courses')) {
+                return response.badRequest('No courses available for the specified criteria');
+            }
+
+            if (error.message.includes('Insufficient courses')) {
+                return response.badRequest('Insufficient courses to meet credit requirements');
+            }
+
+            return response.serverError('Failed to generate schedule recommendations', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/schedules/history
+ * Get user schedule recommendation history
+ */
+app.http('schedules-history', {
+    methods: ['GET'],
+    route: 'schedules/history',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const url = new URL(request.url);
+            const filters = {
+                semesterCode: url.searchParams.get('semesterCode'),
+                algorithmType: url.searchParams.get('algorithmType'),
+                isBookmarked: url.searchParams.get('bookmarked') === 'true',
+                isApplied: url.searchParams.get('applied') === 'true'
+            };
+
+            const pagination = {
+                page: parseInt(url.searchParams.get('page')) || 1,
+                limit: parseInt(url.searchParams.get('limit')) || 10
+            };
+
+            // Get schedule history
+            const history = await scheduleService.getScheduleHistory(
+                request.user.userID,
+                filters,
+                pagination
+            );
+
+            return response.success(history, 'Schedule history retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get schedule history error:', error.message);
+            return response.serverError('Failed to get schedule history', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/schedules/{scheduleId}
+ * Get detailed schedule recommendation
+ */
+app.http('schedules-details', {
+    methods: ['GET'],
+    route: 'schedules/{scheduleId}',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const scheduleId = parseInt(context.bindingData.scheduleId);
+
+            if (isNaN(scheduleId)) {
+                return response.badRequest('Invalid schedule ID');
+            }
+
+            // Get schedule details (ensure user owns the schedule)
+            const schedule = await scheduleService.getScheduleDetails(
+                scheduleId,
+                request.user.userID
+            );
+
+            if (!schedule) {
+                return response.notFound('Schedule recommendation not found');
+            }
+
+            return response.success(schedule, 'Schedule details retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get schedule details error:', error.message);
+
+            if (error.message.includes('not authorized')) {
+                return response.forbidden('Not authorized to view this schedule');
+            }
+
+            return response.serverError('Failed to get schedule details', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/schedules/{scheduleId}/bookmark
+ * Bookmark a schedule recommendation
+ */
+app.http('schedules-bookmark', {
+    methods: ['POST'],
+    route: 'schedules/{scheduleId}/bookmark',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const scheduleId = parseInt(context.bindingData.scheduleId);
+
+            if (isNaN(scheduleId)) {
+                return response.badRequest('Invalid schedule ID');
+            }
+
+            // Toggle bookmark status
+            const result = await scheduleService.toggleScheduleBookmark(
+                scheduleId,
+                request.user.userID
+            );
+
+            return response.success(result,
+                result.isBookmarked ? 'Schedule bookmarked' : 'Bookmark removed'
+            );
+
+        } catch (error) {
+            context.log.error('Bookmark schedule error:', error.message);
+
+            if (error.message.includes('not found')) {
+                return response.notFound('Schedule recommendation not found');
+            }
+
+            if (error.message.includes('not authorized')) {
+                return response.forbidden('Not authorized to bookmark this schedule');
+            }
+
+            return response.serverError('Failed to bookmark schedule', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/schedules/{scheduleId}/apply
+ * Apply schedule recommendation (enroll in courses)
+ */
+app.http('schedules-apply', {
+    methods: ['POST'],
+    route: 'schedules/{scheduleId}/apply',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const scheduleId = parseInt(context.bindingData.scheduleId);
+
+            if (isNaN(scheduleId)) {
+                return response.badRequest('Invalid schedule ID');
+            }
+
+            const body = await request.json();
+            const applyOptions = {
+                enrollmentType: body.enrollmentType || 'Enrolled',
+                skipConflicts: body.skipConflicts || false,
+                forceEnroll: body.forceEnroll || false
+            };
+
+            // Apply schedule (enroll in all courses)
+            const result = await scheduleService.applyScheduleRecommendation(
+                scheduleId,
+                request.user.userID,
+                applyOptions
+            );
+
+            return response.success(result, 'Schedule application completed');
+
+        } catch (error) {
+            context.log.error('Apply schedule error:', error.message);
+
+            if (error.message.includes('not found')) {
+                return response.notFound('Schedule recommendation not found');
+            }
+
+            if (error.message.includes('conflicts detected')) {
+                return response.conflict('Schedule conflicts detected');
+            }
+
+            if (error.message.includes('enrollment full')) {
+                return response.badRequest('Some courses are full');
+            }
+
+            return response.serverError('Failed to apply schedule', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/schedules/{scheduleId}/compare
+ * Compare schedule with current enrollments or another schedule
+ */
+app.http('schedules-compare', {
+    methods: ['POST'],
+    route: 'schedules/{scheduleId}/compare',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const scheduleId = parseInt(context.bindingData.scheduleId);
+
+            if (isNaN(scheduleId)) {
+                return response.badRequest('Invalid schedule ID');
+            }
+
+            const body = await request.json();
+            const compareWith = {
+                type: body.compareWith || 'current', // 'current' or 'schedule'
+                targetScheduleId: body.targetScheduleId,
+                semesterCode: body.semesterCode
+            };
+
+            // Compare schedules
+            const comparison = await scheduleService.compareSchedules(
+                scheduleId,
+                request.user.userID,
+                compareWith
+            );
+
+            return response.success(comparison, 'Schedule comparison completed successfully');
+
+        } catch (error) {
+            context.log.error('Compare schedules error:', error.message);
+
+            if (error.message.includes('not found')) {
+                return response.notFound('Schedule not found for comparison');
+            }
+
+            return response.serverError('Failed to compare schedules', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/schedules/optimize
+ * Optimize existing schedule based on new criteria
+ */
+app.http('schedules-optimize', {
+    methods: ['POST'],
+    route: 'schedules/optimize',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const body = await request.json();
+
+            // Validate optimization request
+            const validation = validator.validateScheduleOptimizationRequest(body);
+            if (!validation.isValid) {
+                return response.validationError(validation.errors);
+            }
+
+            const optimizationParams = {
+                userID: request.user.userID,
+                semesterCode: body.semesterCode,
+                baseScheduleId: body.baseScheduleId,
+                optimizationGoals: body.optimizationGoals, // ['minimize_gaps', 'prefer_morning', 'single_campus', etc.]
+                constraints: body.constraints,
+                maxAlternatives: body.maxAlternatives || 3
+            };
+
+            // Optimize schedule
+            const optimizedSchedules = await scheduleService.optimizeSchedule(optimizationParams);
+
+            return response.success(optimizedSchedules, 'Schedule optimization completed successfully');
+
+        } catch (error) {
+            context.log.error('Optimize schedule error:', error.message);
+
+            if (error.message.includes('base schedule not found')) {
+                return response.notFound('Base schedule not found');
+            }
+
+            return response.serverError('Failed to optimize schedule', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/schedules/analytics
+ * Get user schedule analytics and patterns
+ */
+app.http('schedules-analytics', {
+    methods: ['GET'],
+    route: 'schedules/analytics',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const url = new URL(request.url);
+            const filters = {
+                semesterCode: url.searchParams.get('semesterCode'),
+                timeRange: url.searchParams.get('timeRange') || 'current_year'
+            };
+
+            // Get schedule analytics
+            const analytics = await scheduleService.getScheduleAnalytics(
+                request.user.userID,
+                filters
+            );
+
+            return response.success(analytics, 'Schedule analytics retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get schedule analytics error:', error.message);
+            return response.serverError('Failed to get schedule analytics', error.message);
+        }
+    }
+});
+
+/**
+ * DELETE /api/schedules/{scheduleId}
+ * Delete a schedule recommendation
+ */
+app.http('schedules-delete', {
+    methods: ['DELETE'],
+    route: 'schedules/{scheduleId}',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const scheduleId = parseInt(context.bindingData.scheduleId);
+
+            if (isNaN(scheduleId)) {
+                return response.badRequest('Invalid schedule ID');
+            }
+
+            // Delete schedule (ensure user owns it)
+            const result = await scheduleService.deleteScheduleRecommendation(
+                scheduleId,
+                request.user.userID
+            );
+
+            return response.success(result, 'Schedule deleted successfully');
+
+        } catch (error) {
+            context.log.error('Delete schedule error:', error.message);
+
+            if (error.message.includes('not found')) {
+                return response.notFound('Schedule recommendation not found');
+            }
+
+            if (error.message.includes('not authorized')) {
+                return response.forbidden('Not authorized to delete this schedule');
+            }
+
+            return response.serverError('Failed to delete schedule', error.message);
+        }
+    }
+});
+
+module.exports = { app };

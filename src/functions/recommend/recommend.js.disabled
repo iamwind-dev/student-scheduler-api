@@ -1,0 +1,90 @@
+const { app } = require('@azure/functions');
+const { generateRecommendations, getStudentPreferences } = require('../database');
+
+app.http('recommend', {
+    methods: ['POST'],
+    authLevel: 'anonymous',
+    handler: async (request, context) => {
+        context.log('HTTP trigger function processed a request for recommend');
+
+        try {
+            // Đọc body từ request
+            const body = await request.json();
+            const { studentId, preferences } = body;
+
+            // Log để kiểm tra
+            context.log('Student ID:', studentId);
+            context.log('Preferences:', preferences);
+
+            // Validate dữ liệu
+            if (!studentId) {
+                return {
+                    status: 400,
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        error: 'studentId is required'
+                    })
+                };
+            }
+
+            // Lấy preferences từ database hoặc sử dụng preferences từ request
+            let studentPreferences = preferences;
+
+            if (!studentPreferences) {
+                try {
+                    studentPreferences = await getStudentPreferences(studentId);
+                    if (!studentPreferences) {
+                        // Sử dụng preferences mặc định nếu không tìm thấy
+                        studentPreferences = {
+                            maxCredits: 18,
+                            campus: 'all',
+                            avoidMorning: false,
+                            avoidEvening: false,
+                            freeTime: []
+                        };
+                    }
+                } catch (error) {
+                    context.log('Error getting preferences:', error);
+                    // Sử dụng preferences mặc định
+                    studentPreferences = {
+                        maxCredits: 18,
+                        campus: 'all',
+                        avoidMorning: false,
+                        avoidEvening: false,
+                        freeTime: []
+                    };
+                }
+            }
+
+            context.log('Using preferences:', studentPreferences);
+
+            // Generate recommendations từ Azure SQL Database
+            const recommendations = await generateRecommendations(studentId, studentPreferences);
+
+            context.log(`Generated ${recommendations.length} schedule recommendations from database`);
+
+            // Trả về kết quả gợi ý
+            return {
+                status: 200,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: 'Schedule recommendations generated successfully from Azure SQL Database',
+                    studentId: studentId,
+                    recommendations: recommendations,
+                    generatedAt: new Date().toISOString()
+                })
+            };
+
+        } catch (error) {
+            context.log('Error generating recommendations:', error);
+            return {
+                status: 500,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    error: 'Failed to generate recommendations from database',
+                    details: error.message
+                })
+            };
+        }
+    }
+});

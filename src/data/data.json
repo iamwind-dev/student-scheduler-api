@@ -1,0 +1,7877 @@
+[
+  {
+    "id": 1,
+    "name": "An toàn bảo mật thông tin tài chính (1)_TA",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A304",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 2,
+    "name": "An toàn và bảo mật trong E-logistics (1)",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A111",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 3,
+    "name": "An toàn và bảo mật trong E-logistics (2)",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A111",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 4,
+    "name": "An toàn và bảo mật trong TMĐT (1)_GBA,BA_TA",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A302",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 5,
+    "name": "An toàn và bảo mật trong TMĐT (2)_TA",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "V.A302",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 6,
+    "name": "Automat và ngôn ngữ hình thức (1)",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.A211",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 7,
+    "name": "Bảo mật và An toàn hệ thống thông tin (1)_GIT,SE_TA",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "V.A301",
+    "weeks": "4->16",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 8,
+    "name": "Bảo mật và An toàn hệ thống thông tin (2)",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A206",
+    "weeks": "4,6->17",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 9,
+    "name": "Bảo mật và An toàn hệ thống thông tin (3)",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "V.A206",
+    "weeks": "4->16",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 10,
+    "name": "Bảo mật và an toàn hệ thống thông tin (MIT)",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A101",
+    "weeks": "49->53,1->5",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 11,
+    "name": "Biên tập phim kỹ thuật số (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 12,
+    "name": "Cấu kiện điện tử (1)_GIC_TA",
+    "lecturer": "TS.Phan Thị Lan Anh",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A305",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 13,
+    "name": "Cấu kiện điện tử (2)_GCE_TA",
+    "lecturer": "TS.Phan Thị Lan Anh",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.A301",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 14,
+    "name": "Cấu kiện điện tử (3)",
+    "lecturer": "ThS.Phan Thị Quỳnh Hương",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "K.A313",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 15,
+    "name": "Cấu kiện điện tử (4)",
+    "lecturer": "ThS.Phan Thị Quỳnh Hương",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "K.A213",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 16,
+    "name": "Chất liệu tạo hình (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A210",
+    "weeks": "6->17",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 17,
+    "name": "Chiến lược Digital Marketing (1)_GBA,DM_TA",
+    "lecturer": "TS.Lê Phước Cửu Long",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A302",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 18,
+    "name": "Chiến lược Digital Marketing (2)",
+    "lecturer": "ThS.Huỳnh Bá Thúy Diệu",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A304",
+    "weeks": "4,6->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 19,
+    "name": "Chiến lược kinh doanh điện tử (1)_GBA,BA_TA",
+    "lecturer": "TS.Văn Hùng Trọng",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 20,
+    "name": "Chiến lược kinh doanh điện tử (2)",
+    "lecturer": "ThS.Bùi Trần Huân",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A112",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 21,
+    "name": "Chiến lược kinh doanh điện tử (3)",
+    "lecturer": "ThS.Bùi Trần Huân",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A112",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 22,
+    "name": "Chủ nghĩa xã hội khoa học (1)",
+    "lecturer": "ThS.Lương Xuân Thành",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 23,
+    "name": "Chủ nghĩa xã hội khoa học (2)",
+    "lecturer": "ThS.Lương Xuân Thành",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 24,
+    "name": "Chủ nghĩa xã hội khoa học (3)",
+    "lecturer": "ThS.Lương Xuân Thành",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 25,
+    "name": "Chủ nghĩa xã hội khoa học (4)",
+    "lecturer": "ThS.Lương Xuân Thành",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 26,
+    "name": "Chủ nghĩa xã hội khoa học (5)",
+    "lecturer": "ThS.Lương Xuân Thành",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 27,
+    "name": "Chủ nghĩa xã hội khoa học (6)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 28,
+    "name": "Chương trình dịch (1)",
+    "lecturer": "ThS.Trần Đình Sơn",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A212",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 29,
+    "name": "Chương trình dịch (2)",
+    "lecturer": "ThS.Trần Đình Sơn",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A212",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 30,
+    "name": "Chương trình dịch (3)",
+    "lecturer": "ThS.Trần Đình Sơn",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 31,
+    "name": "Chương trình dịch (4)",
+    "lecturer": "ThS.Trần Đình Sơn",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 32,
+    "name": "Chương trình dịch (5)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A311",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 33,
+    "name": "Chương trình dịch (6)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A311",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 34,
+    "name": "Chuyên đề 1 (BA) (1)_GBA,DM_Trực quan hóa dữ liệu_TA",
+    "lecturer": "TS.Nguyễn Thanh Hoài",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A302",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 35,
+    "name": "Chuyên đề 1 (BA) (2)_DM_Trực quan hóa dữ liệu",
+    "lecturer": "TS.Nguyễn Thanh Hoài",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A303",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 36,
+    "name": "Chuyên đề 1 (CE) (1)_ES_Thiết bị đo",
+    "lecturer": "TS.Phan Thị Lan Anh",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A211",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 37,
+    "name": "Chuyên đề 1 (CE) (2)_IC_Ngôn ngữ mô tả phần cứng_TA",
+    "lecturer": "TS.Dương Ngọc Pháp",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A311",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 38,
+    "name": "Chuyên đề 1 (IT) (1)_AI,AD_Phân tích dữ liệu tài chính",
+    "lecturer": "TS.Phan Văn Thành",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A213",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 39,
+    "name": "Chuyên đề 1 (IT) (2)_MC_Luật phối cảnh",
+    "lecturer": "ThS.Đặng Đại Việt",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A213",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 40,
+    "name": "Chuyên đề 1 (IT) (3)_NS_Chuyển mạch, định tuyến và bảo mật hạ tầng mạng",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Bảy | Tiết 1->4",
+    "room": "K.A113",
+    "weeks": "4->11",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 41,
+    "name": "Chuyên đề 1 (IT) (4)_NS_Chuyển mạch, định tuyến và bảo mật hạ tầng mạng",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Bảy | Tiết 6->9",
+    "room": "K.A113",
+    "weeks": "4->11",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 42,
+    "name": "Chuyên đề 2 (BA) (1)_GBA,BA_Blockchain trong TMĐT",
+    "lecturer": "ThS.Võ Văn Đức",
+    "time": "Thứ Bảy | Tiết 1->3",
+    "room": "K.A101",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 43,
+    "name": "Chuyên đề 2 (BA) (2)_BA_Blockchain trong TMĐT",
+    "lecturer": "ThS.Võ Văn Đức",
+    "time": "Thứ Bảy | Tiết 6->8",
+    "room": "K.A101",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 44,
+    "name": "Chuyên đề 2 (BA) (3)_ET_Du lịch bền vững",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A209",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 45,
+    "name": "Chuyên đề 2 (BA) (4)_EF_Đổi mới sáng tạo trong tài chính",
+    "lecturer": "ThS.Lương Thủy Tiên",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A114",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 46,
+    "name": "Chuyên đề 2 (CE) (1)_ES,IC_Matlab",
+    "lecturer": "ThS.Phan Thị Quỳnh Hương",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A212",
+    "weeks": "4,6->19",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 47,
+    "name": "Chuyên đề 2 (IT) (1)_GIT,SE_Lập trình xe tự hành_TA",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 48,
+    "name": "Chuyên đề 2 (IT) (2)_SE_Xe tự hành",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 49,
+    "name": "Chuyên đề 2 (IT) (3)_SE_Xe tự hành",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 50,
+    "name": "Chuyên đề 2 (IT) (4)_JIT,KIT_Khởi nghiệp thực tế",
+    "lecturer": "TS.Đinh Thị Đông Phương",
+    "time": "Thứ Bảy | Tiết 1->3",
+    "room": "K.C106",
+    "weeks": "4->13",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 51,
+    "name": "Chuyên đề 2 (IT) (5)_KIT_PosgresQL",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A107",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 52,
+    "name": "Chuyên đề 2 (IT) (6)_DA_Giải phẫu tạo hình",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A313",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 53,
+    "name": "Chuyên đề 3 (CE) (1)_ES_Lập trình ô tô",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Bảy | Tiết 1->3",
+    "room": "K.A114",
+    "weeks": "4->13",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 54,
+    "name": "Chuyên đề 3 (IT) (1)_GIT,SE_AI-Data Science Projects_TA",
+    "lecturer": "TS.Nguyễn Lương Vương",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A207",
+    "weeks": "4->13",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 55,
+    "name": "Chuyên đề 3 (IT) (10)_DA_Chất liệu tạo hình",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.C107",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 56,
+    "name": "Chuyên đề 3 (IT) (11)_IR_Hệ thống thông minh",
+    "lecturer": "TS.Vương Công Đạt",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A205",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 57,
+    "name": "Chuyên đề 3 (IT) (12)_NS_Tấn công và phòng thủ ứng dụng web",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Bảy | Tiết 1->5",
+    "room": "K.A113",
+    "weeks": "12->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 58,
+    "name": "Chuyên đề 3 (IT) (13)_MC_Quy trình sản xuất phim và Game",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.C206",
+    "weeks": "4,6->19",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 59,
+    "name": "Chuyên đề 3 (IT) (2)_SE_Low code, No code & Automation",
+    "lecturer": "ThS.Nguyễn Anh Tuấn",
+    "time": "Thứ Bảy | Tiết 1->2",
+    "room": "K.A112",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 60,
+    "name": "Chuyên đề 3 (IT) (3)_SE_Low code, No code & Automation",
+    "lecturer": "ThS.Nguyễn Anh Tuấn",
+    "time": "Thứ Bảy | Tiết 3->4",
+    "room": "K.A112",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 61,
+    "name": "Chuyên đề 3 (IT) (4)_SE_Hệ khuyến nghị",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 62,
+    "name": "Chuyên đề 3 (IT) (5)_SE_Hệ khuyến nghị",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 63,
+    "name": "Chuyên đề 3 (IT) (6)_JIT,KIT_Blockchain",
+    "lecturer": "ThS.Trương Quốc Tuấn",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 64,
+    "name": "Chuyên đề 3 (IT) (7)_Ite_Blockchain",
+    "lecturer": "ThS.Trương Quốc Tuấn",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 65,
+    "name": "Chuyên đề 3 (IT) (8)_AD,AI_Sentiment analysis",
+    "lecturer": "TS.Trần Uyên Trang",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 66,
+    "name": "Chuyên đề 3 (IT) (9)_MC_Quy trình sản xuất phim và Game",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.C206",
+    "weeks": "4,6->19",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 67,
+    "name": "Chuyên đề Thiết kế mạch (1)",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Bảy | Tiết 6->7",
+    "room": "D2-104",
+    "weeks": "6->12",
+    "Sỉ số": "1",
+    "teachingPlan": ""
+  },
+  {
+    "id": 68,
+    "name": "Chuyển mạch và định tuyến (1)",
+    "lecturer": "ThS.Lê Tự Thanh",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A304",
+    "weeks": "4->18",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 69,
+    "name": "Chuyển mạch và định tuyến (2)",
+    "lecturer": "ThS.Lê Tự Thanh",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A312",
+    "weeks": "4->18",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 70,
+    "name": "Cơ sở dữ liệu (1)_GIT_TA",
+    "lecturer": "TS.Hồ Văn Phi",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A303",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 71,
+    "name": "Cơ sở dữ liệu (10)_GIC_TA",
+    "lecturer": "TS.Hồ Văn Phi",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A307",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 72,
+    "name": "Cơ sở dữ liệu (13)_GCE",
+    "lecturer": "ThS.Lương Khánh Tý",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.A315",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 73,
+    "name": "Cơ sở dữ liệu (14)",
+    "lecturer": "ThS.Lương Khánh Tý",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A303",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 74,
+    "name": "Cơ sở dữ liệu (15)",
+    "lecturer": "ThS.Lương Khánh Tý",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A207",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 75,
+    "name": "Cơ sở dữ liệu (16)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A212",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 76,
+    "name": "Cơ sở dữ liệu (17)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A305",
+    "weeks": "7->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 77,
+    "name": "Cơ sở dữ liệu (2)_GIT_TA",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.A114",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 78,
+    "name": "Cơ sở dữ liệu (3)",
+    "lecturer": "ThS.Lê Viết Trương",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.A307",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 79,
+    "name": "Cơ sở dữ liệu (4)",
+    "lecturer": "ThS.Dương Thị Mai Nga",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A107",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 80,
+    "name": "Cơ sở dữ liệu (5)",
+    "lecturer": "ThS.Dương Thị Mai Nga",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A312",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 81,
+    "name": "Cơ sở dữ liệu (6)",
+    "lecturer": "ThS.Lê Viết Trương",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A207",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 82,
+    "name": "Cơ sở dữ liệu (7)_GITe_TA",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A111",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 83,
+    "name": "Cơ sở dữ liệu (8)_TA",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A305",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 84,
+    "name": "Cơ sở dữ liệu (9)_TA",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A111",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 85,
+    "name": "Cơ sở tạo hình 1 (1)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.C104",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 86,
+    "name": "Cơ sở tạo hình 1 (2)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.C104",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 87,
+    "name": "Cơ sở tạo hình 1 (3)",
+    "lecturer": "ThS.Huỳnh Thị Thắng",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.C104",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 88,
+    "name": "Công nghệ và lập trình web (1)_GIT_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A303",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 89,
+    "name": "Công nghệ và lập trình web (10)",
+    "lecturer": "ThS.Võ Ngọc Đạt",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A214",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 90,
+    "name": "Công nghệ và lập trình web (11)_AI",
+    "lecturer": "ThS.Võ Ngọc Đạt",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A214",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 91,
+    "name": "Công nghệ và lập trình web (2)_GIT_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A401",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 92,
+    "name": "Công nghệ và lập trình web (3)",
+    "lecturer": "TS.Nguyễn Văn Bình",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A212",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 93,
+    "name": "Công nghệ và lập trình web (4)",
+    "lecturer": "TS.Nguyễn Văn  Bình",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A212",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 94,
+    "name": "Công nghệ và lập trình web (5)",
+    "lecturer": "TS.Nguyễn Văn  Bình",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A101",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 95,
+    "name": "Công nghệ và lập trình web (6)",
+    "lecturer": "TS.Nguyễn Văn  Bình",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A214",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 96,
+    "name": "Công nghệ và lập trình web (7)_JIT",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A205",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 97,
+    "name": "Công nghệ và lập trình web (8)",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A315",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 98,
+    "name": "Công nghệ và lập trình web (9)_GITe_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A401",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 99,
+    "name": "Công nghệ website (1)",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A209",
+    "weeks": "4,6->17",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 100,
+    "name": "Công nghệ website (2)",
+    "lecturer": ".",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "(Chọn)",
+    "weeks": "4,6->17",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 101,
+    "name": "Digital Marketing (1)_GDM,DM_TA",
+    "lecturer": "TS.Nguyễn Thị Kiều Trang",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A302",
+    "weeks": "5->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 102,
+    "name": "Digital Marketing (2)",
+    "lecturer": "ThS.Trần Phạm Huyền Trang",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A302",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 103,
+    "name": "Đảm bảo chất lượng và Kiểm thử phần mềm (1)_GIT_TA",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Năm | Tiết 8->10",
+    "room": "K.A111",
+    "weeks": "4->6",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 104,
+    "name": "Đảm bảo chất lượng và Kiểm thử phần mềm (2)",
+    "lecturer": "ThS.Dương Thị Mai Nga",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A209",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 105,
+    "name": "Đảm bảo chất lượng và Kiểm thử phần mềm (3)",
+    "lecturer": "ThS.Dương Thị Mai Nga",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A207",
+    "weeks": "4,6->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 106,
+    "name": "Đảm bảo chất lượng và Kiểm thử phần mềm (4)_JIT,KIT",
+    "lecturer": "ThS.Dương Thị Mai Nga",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4,6->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 107,
+    "name": "Đạo đức trong kinh doanh (1)_GBA",
+    "lecturer": "ThS.Nguyễn Thị Khánh Hà",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 108,
+    "name": "Đạo đức trong kinh doanh (2)",
+    "lecturer": "ThS.Nguyễn Thị Khánh Hà",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 109,
+    "name": "Đạo đức trong kinh doanh (3)",
+    "lecturer": "ThS.Trần Thị Mỹ Châu",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A207",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 110,
+    "name": "Đạo đức trong kinh doanh (4)",
+    "lecturer": "ThS.Trần Thị Mỹ Châu",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A301",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 111,
+    "name": "Đạo đức trong kinh doanh (5)",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A205",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 112,
+    "name": "Đạo đức trong kinh doanh (6)",
+    "lecturer": "ThS.Trần Thị Mỹ Châu",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 113,
+    "name": "Đầu tư tài chính (1)",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A114",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 114,
+    "name": "Đề án 2 (BA) (1)",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "6->19",
+    "Sỉ số": "500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 115,
+    "name": "Đề án 2 (BA)_2 tín chỉ",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "6->19",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 116,
+    "name": "Đề án 4 (BA) (1)",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "4->17",
+    "Sỉ số": "500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 117,
+    "name": "Điện toán đám mây (1)_GIT_TA",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A212",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 118,
+    "name": "Điện toán đám mây (2)",
+    "lecturer": "TS.Nguyễn Hà Huy Cường",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "V.A403",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 119,
+    "name": "Điện toán đám mây (3)",
+    "lecturer": "TS.Nguyễn Hà Huy Cường",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A403",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 120,
+    "name": "Điện toán đám mây (4)_JIT,KIT",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 121,
+    "name": "Điện tử ứng dụng (1)",
+    "lecturer": "ThS.Phan Thị Quỳnh Hương",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A309",
+    "weeks": "4,6->19",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 122,
+    "name": "Đồ án 1 (MIT)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ - | Tiết -",
+    "room": "-",
+    "weeks": "-",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 123,
+    "name": "Đồ án 2 (MIT)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ - | Tiết -",
+    "room": "-",
+    "weeks": "-",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  
+  {
+    "id": 124,
+    "name": "Đồ án chuyên ngành 1 (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "1",
+    "teachingPlan": ""
+  },
+  {
+    "id": 125,
+    "name": "Đồ án chuyên ngành 1 (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 126,
+    "name": "Đồ án chuyên ngành 1 (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 127,
+    "name": "Đồ án chuyên ngành 2 (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "4->17",
+    "Sỉ số": "100",
+    "teachingPlan": ""
+  },
+  {
+    "id": 128,
+    "name": "Đồ án chuyên ngành 2 (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "4->17",
+    "Sỉ số": "700",
+    "teachingPlan": ""
+  },
+  {
+    "id": 129,
+    "name": "Đồ án chuyên ngành 2 (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "4->17",
+    "Sỉ số": "150",
+    "teachingPlan": ""
+  },
+  {
+    "id": 130,
+    "name": "Đồ án chuyên ngành 3 (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->19",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 131,
+    "name": "Đồ án chuyên ngành 3 (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 133,
+    "name": "Đồ án cơ sở 2 (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "6->19",
+    "Sỉ số": "1000",
+    "teachingPlan": ""
+  },
+  {
+    "id": 134,
+    "name": "Đồ án cơ sở 2 (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "6->19",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 135,
+    "name": "Đồ án cơ sở 3 (CE) (1)_Khóa 20->24",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 136,
+    "name": "Đồ án cơ sở 3 (IT) (1)_Khóa 20->24",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 137,
+    "name": "Đồ án cơ sở 3 (IT) (2)_IR,NS_Khóa 20->24",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  
+  {
+    "id": 138,
+    "name": "Đồ án cơ sở 4 (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "4->17",
+    "Sỉ số": "120",
+    "teachingPlan": ""
+  },
+  {
+    "id": 139,
+    "name": "Đồ án cơ sở 4 (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "4->17",
+    "Sỉ số": "750",
+    "teachingPlan": ""
+  },
+  {
+    "id": 140,
+    "name": "Đồ án cơ sở 4 (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết ->",
+    "room": "Chưa xếp phòng",
+    "weeks": "4->17",
+    "Sỉ số": "120",
+    "teachingPlan": ""
+  },
+  {
+    "id": 141,
+    "name": "Đồ án thiết kế 1 (1)_IC",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "4->17",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 142,
+    "name": "Đồ án tốt nghiệp (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "6->22",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 143,
+    "name": "Đồ án tốt nghiệp (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "6->22",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 144,
+    "name": "Đồ án tốt nghiệp (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "6->22",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 145,
+    "name": "Đồ họa 2D (1)",
+    "lecturer": "ThS.Trần Thị Hạ Quyên",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A401",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 146,
+    "name": "Đồ họa máy tính (1)_GIT",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A212",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 147,
+    "name": "Đồ họa máy tính (2)",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A212",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 148,
+    "name": "Đồ họa máy tính (3)",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A114",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 149,
+    "name": "Đồ họa máy tính (4)_JIT,KIT",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A205",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 150,
+    "name": "Đồ họa máy tính (5)",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.B302",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 151,
+    "name": "GDTC 2 (Bóng chuyền) (1)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 152,
+    "name": "GDTC 2 (Bóng chuyền) (2)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 153,
+    "name": "GDTC 2 (Bóng chuyền) (3)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 154,
+    "name": "GDTC 2 (Bóng chuyền) (4)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 155,
+    "name": "GDTC 2 (Bóng rổ) (1)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 156,
+    "name": "GDTC 2 (Bóng rổ) (2)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 157,
+    "name": "GDTC 2 (Bóng rổ) (3)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 158,
+    "name": "GDTC 2 (Bóng rổ) (4)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 159,
+    "name": "GDTC 2 (Cầu lông) (1)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.Tầng 3-TTSV",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 160,
+    "name": "GDTC 2 (Cầu lông) (2)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.Tầng 3-TTSV",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 161,
+    "name": "GDTC 3 (Bóng bàn) (1)",
+    "lecturer": "ThS.Nguyễn Ngọc Huy",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.Tầng 1-TTSV",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 162,
+    "name": "GDTC 3 (Bóng bàn) (2)",
+    "lecturer": "ThS.Nguyễn Ngọc Huy",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.Tầng 1-TTSV",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 163,
+    "name": "GDTC 3 (Bóng chuyền) (1)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 164,
+    "name": "GDTC 3 (Bóng chuyền) (2)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 165,
+    "name": "GDTC 3 (Bóng chuyền) (3)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 166,
+    "name": "GDTC 3 (Bóng chuyền) (4)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.Sân bóng chuyền 1",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 167,
+    "name": "GDTC 3 (Bóng rổ) (1)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 168,
+    "name": "GDTC 3 (Bóng rổ) (2)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 169,
+    "name": "GDTC 3 (Bóng rổ) (3)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 170,
+    "name": "GDTC 3 (Bóng rổ) (4)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 171,
+    "name": "GDTC 3 (Bóng rổ) (5)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 172,
+    "name": "GDTC 3 (Bóng rổ) (6)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.Sân bóng rổ 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 173,
+    "name": "GDTC 3 (Cầu lông) (1)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.T3-TTSV.1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 174,
+    "name": "GDTC 3 (Cầu lông) (2)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.T3-TTSV.1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 175,
+    "name": "GDTC 3 (Nhịp điệu) (1)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.điền kinh.1",
+    "weeks": "6->20",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 176,
+    "name": "GDTC 3 (Nhịp điệu) (2)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.Tầng 2-TTSV",
+    "weeks": "6->20",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 177,
+    "name": "GDTC 3 (Nhịp điệu) (3)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.điền kinh.1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 178,
+    "name": "GDTC 3 (Nhịp điệu) (4)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.Sân điền kinh 1",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 179,
+    "name": "GDTC 3 (Võ Vinam) (1)",
+    "lecturer": "ThS.Phạm Hữu Thật",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 180,
+    "name": "GDTC 3 (Võ Vinam) (2)",
+    "lecturer": "ThS.Phạm Hữu Thật",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.Sân điền kinh 1",
+    "weeks": "5->19",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 181,
+    "name": "GDTC 3 (Yoga) (1)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.Tầng 2-TTSV",
+    "weeks": "6->20",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 182,
+    "name": "GDTC 3 (Yoga) (2)",
+    "lecturer": "ThS.Trần Thị Vi Vân",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.Tầng 2-TTSV",
+    "weeks": "6->20",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 183,
+    "name": "GDTC 4 (1)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Bảy | Tiết 1->2",
+    "room": "K.điền kinh.1",
+    "weeks": "5->19",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 184,
+    "name": "GDTC 4 (2)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Bảy | Tiết 1->2",
+    "room": "K.điền kinh.1",
+    "weeks": "5->19",
+    "Sỉ số": "55",
+    "teachingPlan": ""
+  },
+  {
+    "id": 185,
+    "name": "GDTC1 (Điền kinh) (1)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 186,
+    "name": "GDTC1 (Điền kinh) (10)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 187,
+    "name": "GDTC1 (Điền kinh) (11)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 188,
+    "name": "GDTC1 (Điền kinh) (12)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 189,
+    "name": "GDTC1 (Điền kinh) (13)",
+    "lecturer": "ThS.Nguyễn Gia Huy",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 190,
+    "name": "GDTC1 (Điền kinh) (14)",
+    "lecturer": "ThS.Nguyễn Gia Huy",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 191,
+    "name": "GDTC1 (Điền kinh) (15)",
+    "lecturer": "ThS.Trần Đăng Chiến",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.Sân điền kinh 1",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 192,
+    "name": "GDTC1 (Điền kinh) (16)",
+    "lecturer": "ThS.Trần Đăng Chiến",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.Sân điền kinh 1",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 193,
+    "name": "GDTC1 (Điền kinh) (17)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 194,
+    "name": "GDTC1 (Điền kinh) (18)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 195,
+    "name": "GDTC1 (Điền kinh) (19)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 196,
+    "name": "GDTC1 (Điền kinh) (2)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 197,
+    "name": "GDTC1 (Điền kinh) (20)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 198,
+    "name": "GDTC1 (Điền kinh) (21)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 199,
+    "name": "GDTC1 (Điền kinh) (22)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 200,
+    "name": "GDTC1 (Điền kinh) (23)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 201,
+    "name": "GDTC1 (Điền kinh) (24)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 202,
+    "name": "GDTC1 (Điền kinh) (25)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 203,
+    "name": "GDTC1 (Điền kinh) (26)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 204,
+    "name": "GDTC1 (Điền kinh) (27)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 205,
+    "name": "GDTC1 (Điền kinh) (28)",
+    "lecturer": "ThS.Lê Quang Phước",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 206,
+    "name": "GDTC1 (Điền kinh) (29)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 207,
+    "name": "GDTC1 (Điền kinh) (3)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 208,
+    "name": "GDTC1 (Điền kinh) (30)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 209,
+    "name": "GDTC1 (Điền kinh) (4)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 210,
+    "name": "GDTC1 (Điền kinh) (5)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 211,
+    "name": "GDTC1 (Điền kinh) (6)",
+    "lecturer": "ThS.Nguyễn Văn Thắng",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 212,
+    "name": "GDTC1 (Điền kinh) (7)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 213,
+    "name": "GDTC1 (Điền kinh) (8)",
+    "lecturer": "ThS.Lê Ngô Anh Quân",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 214,
+    "name": "GDTC1 (Điền kinh) (9)",
+    "lecturer": "ThS.Hồ Anh Hưng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K. Sân điền kinh",
+    "weeks": "7->21",
+    "Sỉ số": "48",
+    "teachingPlan": ""
+  },
+  {
+    "id": 215,
+    "name": "Giải phẫu tạo hình (1)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A307",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 216,
+    "name": "Giải phẫu tạo hình (2)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A313",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 217,
+    "name": "Giải tích 1 (1)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A113",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 218,
+    "name": "Giải tích 1 (11)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A211",
+    "weeks": "7->21",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 219,
+    "name": "Giải tích 1 (12)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A107",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 220,
+    "name": "Giải tích 1 (13)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.A107",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 221,
+    "name": "Giải tích 1 (14)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A212",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 222,
+    "name": "Giải tích 1 (15)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A212",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 223,
+    "name": "Giải tích 1 (16)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A113",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 224,
+    "name": "Giải tích 1 (2)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A113",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 225,
+    "name": "Giải tích 1 (3)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 226,
+    "name": "Giải tích 1 (4)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 227,
+    "name": "Giải tích 1 (5)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.A213",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 228,
+    "name": "Giải tích 1 (6)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A213",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 229,
+    "name": "Giải tích 1 (7)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A113",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 230,
+    "name": "Giải tích 1 (8)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A213",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 231,
+    "name": "Giải tích 1 (9)",
+    "lecturer": "ThS.Nguyễn Quốc Thịnh",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A213",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 232,
+    "name": "Giải tích 2 (1)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 233,
+    "name": "Giải tích 2 (11)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A212",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 234,
+    "name": "Giải tích 2 (12)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A212",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 235,
+    "name": "Giải tích 2 (13)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A213",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 236,
+    "name": "Giải tích 2 (14)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A213",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 237,
+    "name": "Giải tích 2 (15)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 238,
+    "name": "Giải tích 2 (2)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 239,
+    "name": "Giải tích 2 (3)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A215",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 240,
+    "name": "Giải tích 2 (4)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A215",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 241,
+    "name": "Giải tích 2 (5)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A103",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 242,
+    "name": "Giải tích 2 (6)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A103",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 243,
+    "name": "Giải tích 2 (7)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A211",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 244,
+    "name": "Giải tích 2 (8)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A112",
+    "weeks": "6->20",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 245,
+    "name": "Giải tích 2 (9)",
+    "lecturer": "ThS.Trần Thị Bích Hòa",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 246,
+    "name": "Giáo dục quốc phòng (1)",
+    "lecturer": "Khoa.Khoa GDQP-AN",
+    "time": "Thứ - | Tiết -",
+    "room": "-",
+    "weeks": "51->53",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 247,
+    "name": "Hành vi người tiêu dùng (1)_GDM,DM_TA",
+    "lecturer": "TS.Nguyễn Thanh Hoài",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A303",
+    "weeks": "6->17",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 248,
+    "name": "Hành vi người tiêu dùng (2)",
+    "lecturer": "TS.Nguyễn Thị Kiều Trang",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A313",
+    "weeks": "5->16",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 249,
+    "name": "Hành vi tiêu dùng du lịch (1)",
+    "lecturer": "TS.Trần Lương Nguyệt",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A110",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 250,
+    "name": "Hệ thống di động và cảm biến (1)",
+    "lecturer": "TS.Trần Thế Sơn",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B302",
+    "weeks": "4->15",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 251,
+    "name": "Hệ thống số - A (1)_GIC_TA",
+    "lecturer": "ThS.Phan Thị Quỳnh Hương",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A401",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 252,
+    "name": "Hệ thống số (1)_GCE,CE_TA",
+    "lecturer": "TS.Dương Ngọc Pháp",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A303",
+    "weeks": "6->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 253,
+    "name": "Hệ thống số (2)",
+    "lecturer": "ThS.Trần Thị Trà Vinh",
+    "time": "Thứ Tư | Tiết 7->9",
+    "room": "V.A209",
+    "weeks": "6->18",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 254,
+    "name": "Hệ thống thanh toán quốc tế (1)",
+    "lecturer": "ThS.Vũ Thị Tuyết Mai",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A213",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 255,
+    "name": "Hệ thống thời gian thực (1)_TA",
+    "lecturer": "TS.Vương Công Đạt",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A502",
+    "weeks": "4->15",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 256,
+    "name": "Hệ thống thông tin quản lý (1)_GBA_TA",
+    "lecturer": "TS.Văn Hùng Trọng",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A209",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 257,
+    "name": "Hệ thống thông tin quản lý (2)_GDM,DM_TA",
+    "lecturer": "TS.Văn Hùng Trọng",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A209",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 258,
+    "name": "Hệ thống thông tin quản lý (3)",
+    "lecturer": "TS.Nguyễn Thị Thanh Huyền",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A206",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 259,
+    "name": "Hệ thống thông tin quản lý (4)_GEL_TA",
+    "lecturer": "TS.Trần Thiện Vũ",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A301",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 260,
+    "name": "Hệ thống thông tin quản lý (5)",
+    "lecturer": "TS.Trần Thiện Vũ",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A301",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 261,
+    "name": "Hệ thống thông tin quản lý (6)",
+    "lecturer": "ThS.Bùi Trần Huân",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A314",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 262,
+    "name": "Hệ thống thông tin quản lý (7)",
+    "lecturer": "ThS.Bùi Trần Huân",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A314",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 263,
+    "name": "Hình họa 1 (1)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.C107",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 264,
+    "name": "Hình họa 1 (2)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.C107",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 265,
+    "name": "Hình họa 1 (3)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.C107",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 266,
+    "name": "Học máy (1)",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A214",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 267,
+    "name": "Học máy (MIT)",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Tư | Tiết 7->9",
+    "room": "K.A101",
+    "weeks": "49->53,1->5",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 268,
+    "name": "Học sâu (1)",
+    "lecturer": "TS.Trần Uyên Trang",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 269,
+    "name": "Học sâu (MIT)",
+    "lecturer": "TS.Nguyễn Hữu Nhật Minh",
+    "time": "Thứ Năm | Tiết 7->9",
+    "room": "K.A101",
+    "weeks": "49->53,1->5",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 270,
+    "name": "Khai phá và lưu trữ dữ liệu Logistics (1)",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A303",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 271,
+    "name": "Khai phá và lưu trữ dữ liệu Logistics (2)",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A303",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 272,
+    "name": "Kho dữ liệu (1)_GIT_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A401",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 273,
+    "name": "Kho dữ liệu (2)",
+    "lecturer": "ThS.Trần Thanh Liêm",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A402",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 274,
+    "name": "Kho dữ liệu (3)",
+    "lecturer": "ThS.Trần Thanh Liêm",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "V.A402",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 275,
+    "name": "Kho dữ liệu (4)_GIT_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A311",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 276,
+    "name": "Kho dữ liệu (5)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A214",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 277,
+    "name": "Kho dữ liệu (6)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "V.A402",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 278,
+    "name": "Kho dữ liệu (7)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A505",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 279,
+    "name": "Kho dữ liệu (8)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "V.A402",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 280,
+    "name": "Khóa luận tốt nghiệp (BA)_K19",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->19",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 281,
+    "name": "Khóa luận tốt nghiệp (BA)_K20,K21",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 282,
+    "name": "Khởi nghiệp và đổi mới sáng tạo (1)_GCE,CE_TA",
+    "lecturer": "ThS.Đinh Nguyễn Khánh Phương",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A112",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 283,
+    "name": "Khởi nghiệp và đổi mới sáng tạo (2)_GIC_TA",
+    "lecturer": "ThS.Đinh Nguyễn Khánh Phương",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A112",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 284,
+    "name": "Khởi nghiệp và đổi mới sáng tạo (3)",
+    "lecturer": "ThS.Nguyễn Thị Như Quỳnh",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A214",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 285,
+    "name": "Khởi sự kinh doanh (1)_GBA_TA",
+    "lecturer": "ThS.Huỳnh Thị Kim Hà",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A405",
+    "weeks": "4,6->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 286,
+    "name": "Khởi sự kinh doanh (2)",
+    "lecturer": "ThS.Nguyễn Thị Như Quỳnh",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A301",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 287,
+    "name": "Khởi sự kinh doanh (3)",
+    "lecturer": "ThS.Lê Thị Hải Vân",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A209",
+    "weeks": "4,6->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 288,
+    "name": "Khởi sự kinh doanh (4)",
+    "lecturer": "ThS.Lê Thị Hải Vân",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A309",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 289,
+    "name": "Khởi sự kinh doanh (5)",
+    "lecturer": "ThS.Lê Thị Hải Vân",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A209",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 290,
+    "name": "Khởi sự kinh doanh (6)",
+    "lecturer": "ThS.Huỳnh Thị Kim Hà",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A303",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 291,
+    "name": "Kịch bản truyền thông (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 292,
+    "name": "Kịch bản truyền thông (2)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 293,
+    "name": "Kiểm thử xâm nhập (1)",
+    "lecturer": "TS.Trần Thế Sơn",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "K.B302",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 294,
+    "name": "Kiến trúc máy tính (1)_GIT_TA",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A112",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 295,
+    "name": "Kiến trúc máy tính (10)",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A212",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 296,
+    "name": "Kiến trúc máy tính (11)_GCE,CE_TA",
+    "lecturer": "ThS.Nguyễn Thị Huyền Trang",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A103",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 297,
+    "name": "Kiến trúc máy tính (12)_GIC_TA",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A312",
+    "weeks": "5->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 298,
+    "name": "Kiến trúc máy tính (13)",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A212",
+    "weeks": "6->20",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 299,
+    "name": "Kiến trúc máy tính (14)_NS_3 tín chỉ",
+    "lecturer": "TS.Phan Thị Lan Anh",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.A303",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 300,
+    "name": "Kiến trúc máy tính (2)_GIT_TA",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A112",
+    "weeks": "6->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 301,
+    "name": "Kiến trúc máy tính (3)",
+    "lecturer": "TS.Đoàn Duy Bình",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A110",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 302,
+    "name": "Kiến trúc máy tính (4)",
+    "lecturer": "TS.Đoàn Duy Bình",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A110",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 303,
+    "name": "Kiến trúc máy tính (5)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A111",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 304,
+    "name": "Kiến trúc máy tính (6)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A211",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 305,
+    "name": "Kiến trúc máy tính (7)_JIT",
+    "lecturer": "ThS.Ninh Khánh Chi",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A207",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 306,
+    "name": "Kiến trúc máy tính (8)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A211",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 307,
+    "name": "Kiến trúc máy tính (9)_GITe_TA",
+    "lecturer": "TS.Đặng Quang Hiển",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A112",
+    "weeks": "6->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 308,
+    "name": "Kinh doanh quốc tế (1)_GBA_TA",
+    "lecturer": "TS.Võ Thị Thanh Thảo",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A311",
+    "weeks": "4->15",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 309,
+    "name": "Kinh doanh quốc tế (2)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A207",
+    "weeks": "4->15",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 310,
+    "name": "Kinh doanh quốc tế (3)",
+    "lecturer": "ThS.Huỳnh Bá Thúy Diệu",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A207",
+    "weeks": "4,6->16",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 311,
+    "name": "Kinh doanh quốc tế (4)",
+    "lecturer": "ThS.Huỳnh Bá Thúy Diệu",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A206",
+    "weeks": "4->15",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 312,
+    "name": "Kinh doanh quốc tế (5)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A206",
+    "weeks": "4->15",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 313,
+    "name": "Kinh tế chính trị Mác - Lênin (1)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 314,
+    "name": "Kinh tế chính trị Mác - Lênin (2)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 315,
+    "name": "Kinh tế chính trị Mác - Lênin (3)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 316,
+    "name": "Kinh tế chính trị Mác - Lênin (4)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 317,
+    "name": "Kinh tế chính trị Mác - Lênin (5)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 318,
+    "name": "Kinh tế chính trị Mác - Lênin (6)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 319,
+    "name": "Kinh tế chính trị Mác - Lênin (7)",
+    "lecturer": "ThS.Nguyễn Thị Mỹ Hạnh",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 320,
+    "name": "Kinh tế vi mô (1)_GBA",
+    "lecturer": "ThS.Nguyễn Ngọc Thảo Vy",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A312",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 321,
+    "name": "Kinh tế vi mô (2)_GDM",
+    "lecturer": "ThS.Trần Phạm Huyền Trang",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A312",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 322,
+    "name": "Kinh tế vi mô (3)",
+    "lecturer": "ThS.Nguyễn Thị Khánh My",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A314",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 323,
+    "name": "Kinh tế vi mô (4)",
+    "lecturer": "ThS.Trần Phạm Huyền Trang",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A207",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 324,
+    "name": "Kinh tế vi mô (5)_GEL",
+    "lecturer": "ThS.Trần Phạm Huyền Trang",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A312",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 325,
+    "name": "Kinh tế vi mô (6)",
+    "lecturer": "ThS.Nguyễn Thị Khánh My",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A313",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 326,
+    "name": "Kinh tế vi mô (7)",
+    "lecturer": "ThS.Nguyễn Thị Khánh My",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A313",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 327,
+    "name": "Kinh tế vi mô (8)",
+    "lecturer": "ThS.Nguyễn Thị Thanh Nhàn",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A103",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 328,
+    "name": "Kỹ thuật chụp ảnh và quay phim (1)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Hai | Tiết 6->10",
+    "room": "K.C101",
+    "weeks": "4,6->16",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 329,
+    "name": "Kỹ thuật chụp ảnh và quay phim (2)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Hai | Tiết 1->5",
+    "room": "K.C101",
+    "weeks": "4,6->16",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 330,
+    "name": "Kỹ thuật Robot (1)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 331,
+    "name": "Lập dự án đầu tư (1)",
+    "lecturer": "TS.Bùi Nữ Thanh Hà",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A314",
+    "weeks": "4->17",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 332,
+    "name": "Lập dự án đầu tư (2)",
+    "lecturer": "TS.Bùi Nữ Thanh Hà",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A304",
+    "weeks": "4->17",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 333,
+    "name": "Lập trình cơ bản (1)_GIT_TA",
+    "lecturer": "PGS.TS.Nguyễn Thanh Bình",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 334,
+    "name": "Lập trình cơ bản (10)",
+    "lecturer": "ThS.Đỗ Công Đức",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A305",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 335,
+    "name": "Lập trình cơ bản (11)",
+    "lecturer": "ThS.Đỗ Công Đức",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A305",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 336,
+    "name": "Lập trình cơ bản (12)_GIC_TA",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A111",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 337,
+    "name": "Lập trình cơ bản (13)_GCE",
+    "lecturer": "ThS.Đặng Thị Kim Ngân",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 338,
+    "name": "Lập trình cơ bản (14)",
+    "lecturer": "ThS.Đặng Thị Kim Ngân",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A112",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+
+  {
+    "id": 339,
+    "name": "Lập trình cơ bản (15)",
+    "lecturer": "ThS.Phạm Tuấn Anh",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A111",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+
+  {
+    "id": 340,
+    "name": "Lập trình cơ bản (16)",
+    "lecturer": "ThS.Trịnh Thị Ngọc Linh",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 341,
+    "name": "Lập trình cơ bản (17)_Olympic TH_TA",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Bảy | Tiết 1->4",
+    "room": "K.A111",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 342,
+    "name": "Lập trình cơ bản (2)_GIT_TA",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A207",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 343,
+    "name": "Lập trình cơ bản (3)",
+    "lecturer": "ThS.Đỗ Công Đức",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A114",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 344,
+    "name": "Lập trình cơ bản (4)",
+    "lecturer": "ThS.Đỗ Công Đức",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A114",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 345,
+    "name": "Lập trình cơ bản (5)",
+    "lecturer": "ThS.Đặng Thị Kim Ngân",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 346,
+    "name": "Lập trình cơ bản (6)",
+    "lecturer": "ThS.Phạm Tuấn Anh",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A111",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 347,
+    "name": "Lập trình cơ bản (7)_GITe",
+    "lecturer": "ThS.Trịnh Thị Ngọc Linh",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 348,
+    "name": "Lập trình cơ bản (8)",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 349,
+    "name": "Lập trình cơ bản (9)",
+    "lecturer": "TS.Nguyễn Đức Hiển",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 350,
+    "name": "Lập trình di động (1)",
+    "lecturer": "ThS.Võ Ngọc Đạt",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A403",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 351,
+    "name": "Lập trình di động (2)",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A301",
+    "weeks": "4->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 352,
+    "name": "Lập trình game (1)_GIT",
+    "lecturer": "ThS.Trịnh Thị Ngọc Linh",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "V.A401",
+    "weeks": "4,6->17",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 353,
+    "name": "Lập trình game (2)",
+    "lecturer": "ThS.Trịnh Thị Ngọc Linh",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A212",
+    "weeks": "4->16",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 354,
+    "name": "Lập trình game (3)",
+    "lecturer": "ThS.Trịnh Thị Ngọc Linh",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A401",
+    "weeks": "4->16",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 355,
+    "name": "Lập trình Game (4)",
+    "lecturer": ".",
+    "time": "Thứ",
+    "room": "(Chọn)",
+    "weeks": "4->16",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 356,
+    "name": "Lập trình hệ thống (1)_GIT_TA",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A207",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 357,
+    "name": "Lập trình hệ thống (2)",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.A101",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 358,
+    "name": "Lập trình hệ thống (3)_TA",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A405",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 359,
+    "name": "Lập trình hệ thống (4)_JIT,KIT",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A205",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 360,
+    "name": "Lập trình hệ thống nhúng (1)",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A403",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 361,
+    "name": "Lập trình hướng đối tượng (1)_GIT_TA",
+    "lecturer": "PGS.TS.Huỳnh Công Pháp",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 362,
+    "name": "Lập trình hướng đối tượng (12)_GIC_TA",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A207",
+    "weeks": "7->21",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 363,
+    "name": "Lập trình hướng đối tượng (13)_GCE_TA",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A214",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 364,
+    "name": "Lập trình hướng đối tượng (14)",
+    "lecturer": "ThS.Lê Thành Công",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 365,
+    "name": "Lập trình hướng đối tượng (15)",
+    "lecturer": "ThS.Lê Thành Công",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 366,
+    "name": "Lập trình hướng đối tượng (16)_NS_2 tín chỉ",
+    "lecturer": "ThS.Lê Đình Nguyên",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.A113",
+    "weeks": "6->20",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 367,
+    "name": "Lập trình hướng đối tượng (2)_GIT_TA",
+    "lecturer": "ThS.Hà Thị Minh Phương",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A103",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 368,
+    "name": "Lập trình hướng đối tượng (3)",
+    "lecturer": "ThS.Lê Thành Công",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 369,
+    "name": "Lập trình hướng đối tượng (4)",
+    "lecturer": "ThS.Lê Thành Công",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A110",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 371,
+    "name": "Lập trình hướng đối tượng (6)",
+    "lecturer": "ThS.Lê Đình Nguyên",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A113",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 372,
+    "name": "Lập trình hướng đối tượng (7)_GITe_TA",
+    "lecturer": "ThS.Hà Thị Minh Phương",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A101",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 373,
+    "name": "Lập trình hướng đối tượng (8)",
+    "lecturer": "TS.Huỳnh Ngọc Thọ",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A112",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 374,
+    "name": "Lập trình hướng đối tượng (9)",
+    "lecturer": "TS.Huỳnh Ngọc Thọ",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A112",
+    "weeks": "7->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 375,
+    "name": "Lập trình mạng (1)_GIT_TA",
+    "lecturer": "PGS.TS.Huỳnh Công Pháp",
+    "time": "Thứ Tư | Tiết 3->5",
+    "room": "K.A101",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 376,
+    "name": "Lập trình mạng (10)",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A309",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 377,
+    "name": "Lập trình mạng (11)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "V.A211",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 378,
+    "name": "Lập trình mạng (12)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A211",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 379,
+    "name": "Lập trình mạng (2)_GIT_TA",
+    "lecturer": "PGS.TS.Huỳnh Công Pháp",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A103",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 380,
+    "name": "Lập trình mạng (3)",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A502",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 381,
+    "name": "Lập trình mạng (4)",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A405",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 382,
+    "name": "Lập trình mạng (5)",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A114",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 383,
+    "name": "Lập trình mạng (6)_JIT,KIT",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.A205",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 384,
+    "name": "Lập trình mạng (7)_JIT,KIT",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A107",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 385,
+    "name": "Lập trình mạng (8)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "V.A505",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 386,
+    "name": "Lập trình mạng (9)",
+    "lecturer": "TS.Lê Tân",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A311",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 387,
+    "name": "Lập trình Python (1)",
+    "lecturer": "TS.Phạm Nguyễn Minh Nhựt",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A401",
+    "weeks": "4,6->19",
+    "Sỉ số": "77",
+    "teachingPlan": ""
+  },
+  {
+    "id": 388,
+    "name": "Lập trình Python (2)",
+    "lecturer": "TS.Phạm Nguyễn Minh Nhựt",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A211",
+    "weeks": "5->19",
+    "Sỉ số": "77",
+    "teachingPlan": ""
+  },
+  {
+    "id": 389,
+    "name": "Lập trình Python (BA)_2 tín chỉ",
+    "lecturer": "TS.Phạm Nguyễn Minh Nhựt",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.B107",
+    "weeks": "4->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 390,
+    "name": "Lập trình Python (BA)_3 tín chỉ",
+    "lecturer": "TS.Phạm Nguyễn Minh Nhựt",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A101",
+    "weeks": "7->15",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 391,
+    "name": "Lập trình Python cho hệ thống nhúng (1)_TA",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A314",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 392,
+    "name": "Lập trình Python cho hệ thống nhúng (2)_TA",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A505",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 393,
+    "name": "Lập trình Python cho hệ thống nhúng (MIT)",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A101",
+    "weeks": "49->53,1->7",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 394,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (1)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "75",
+    "teachingPlan": ""
+  },
+  {
+    "id": 395,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (10)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 396,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (11)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 397,
+    "name": "Lịch sử Đảng cộng sản Việt Nam (12)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "75",
+    "teachingPlan": ""
+  },
+  {
+    "id": 398,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (2)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 399,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (3)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 400,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (4)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.C105",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 401,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (7)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "75",
+    "teachingPlan": ""
+  },
+  {
+    "id": 402,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (8)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 403,
+    "name": "Lịch sử Đảng Cộng sản Việt Nam (9)",
+    "lecturer": "ThS.Nguyễn Thị Mai",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 404,
+    "name": "Lịch sử mỹ thuật Việt nam và thế giới (1)",
+    "lecturer": "ThS.Nguyễn Trọng Công Thành",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A313",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 405,
+    "name": "Linux và phần mềm nguồn mở (1)_GIT_TA",
+    "lecturer": "TS.Nguyễn Hữu Nhật Minh",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "K.A315",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 406,
+    "name": "Linux và phần mềm nguồn mở (2)",
+    "lecturer": "ThS.Ninh Khánh Chi",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A101",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 407,
+    "name": "Linux và phần mềm nguồn mở (3)_TA",
+    "lecturer": "TS.Nguyễn Hữu Nhật Minh",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "V.A211",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 408,
+    "name": "Linux và phần mềm nguồn mở (4)_JIT,KIT",
+    "lecturer": "TS.Nguyễn Hữu Nhật Minh",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A105",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 409,
+    "name": "Linux và phần mềm nguồn mở (5)",
+    "lecturer": "ThS.Ninh Khánh Chi",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "K.A307",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 410,
+    "name": "Linux và phần mềm nguồn mở (6)_TA",
+    "lecturer": "TS.Vương Công Đạt",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A315",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 411,
+    "name": "Luật xa gần (1)",
+    "lecturer": "ThS.Đặng Đại Việt",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A305",
+    "weeks": "6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 412,
+    "name": "Mạch điện và lab (1)_GIC_TA",
+    "lecturer": "TS.Phan Thị Lan Anh",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A304",
+    "weeks": "5->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 413,
+    "name": "Mạng cảm biến không dây (1)",
+    "lecturer": "TS.Trần Thế Sơn",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.B302",
+    "weeks": "4->16",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 414,
+    "name": "Mạng máy tính (1)_AI_TA",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A211",
+    "weeks": "5->19",
+    "Sỉ số": "45",
+    "teachingPlan": ""
+  },
+  {
+    "id": 415,
+    "name": "Mạng máy tính (2)_TA",
+    "lecturer": "TS.Nguyễn Vũ Anh Quang",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B301",
+    "weeks": "4->18",
+    "Sỉ số": "45",
+    "teachingPlan": ""
+  },
+  {
+    "id": 416,
+    "name": "Marketing căn bản (1)",
+    "lecturer": "TS.Ngô Hải Quỳnh",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A312",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 417,
+    "name": "Marketing truyền thông xã hội (1)_GBA,DM_TA",
+    "lecturer": "ThS.Đặng Thị Thanh Minh",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "V.A304",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 418,
+    "name": "Marketing truyền thông xã hội (2)",
+    "lecturer": "ThS.Trần Phạm Huyền Trang",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A302",
+    "weeks": "4,6->17",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 419,
+    "name": "Mật mã học (1)",
+    "lecturer": "TS.Trần Thế Sơn",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B302",
+    "weeks": "4->15",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 420,
+    "name": "Mỹ học đại cương (1)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.C204",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 421,
+    "name": "Nghệ thuật chữ (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 422,
+    "name": "Nghiệp vụ hướng dẫn du lịch (1)",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "V.A304",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 423,
+    "name": "Nguyên lý hệ điều hành (1)_GIT_TA",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A111",
+    "weeks": "6->20",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 424,
+    "name": "Nguyên lý hệ điều hành (10)",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A213",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 425,
+    "name": "Nguyên lý hệ điều hành (2)_GIT_TA",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A111",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 426,
+    "name": "Nguyên lý hệ điều hành (3)",
+    "lecturer": "ThS.Ninh Khánh Chi",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 427,
+    "name": "Nguyên lý hệ điều hành (4)",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.A212",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 428,
+    "name": "Nguyên lý hệ điều hành (5)",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A213",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 429,
+    "name": "Nguyên lý hệ điều hành (6)",
+    "lecturer": "ThS.Lê Kim Trọng",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A103",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 430,
+    "name": "Nguyên lý hệ điều hành (7)_JIT",
+    "lecturer": "ThS.Trần Thu Thủy",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.A207",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 431,
+    "name": "Nguyên lý hệ điều hành (8)",
+    "lecturer": "ThS.Lê Kim Trọng",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A103",
+    "weeks": "5->19",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 432,
+    "name": "Nguyên lý hệ điều hành (9)_GITe_TA",
+    "lecturer": "TS.Nguyễn Nhật Ân",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A107",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 433,
+    "name": "Nguyên lý kế toán (1)_GBA_TA",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A207",
+    "weeks": "5->16",
+    "Sỉ số": "69",
+    "teachingPlan": ""
+  },
+  {
+    "id": 434,
+    "name": "Nguyên lý kế toán (2)_GEL",
+    "lecturer": "ThS.Trần Thị Mỹ Châu",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A311",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 435,
+    "name": "Nguyên lý kế toán (3)",
+    "lecturer": "ThS.Vũ Thị Tuyết Mai",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A312",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 436,
+    "name": "Nguyên lý kế toán (4)",
+    "lecturer": "ThS.Vũ Thị Tuyết Mai",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A302",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 437,
+    "name": "Nguyên lý kế toán (5)",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A304",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 438,
+    "name": "Nguyên lý thị giác (1)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A212",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 439,
+    "name": "Nguyên lý thiết kế đồ họa (1)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A114",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 440,
+    "name": "Nhập môn E-logistics (1)_GEL_TA",
+    "lecturer": "TS.Võ Thị Thanh Thảo",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A209",
+    "weeks": "5->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 441,
+    "name": "Nhập môn E-logistics (2)",
+    "lecturer": "TS.Võ Thị Thanh  Thảo",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A205",
+    "weeks": "6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 442,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (1)_GBA_TA",
+    "lecturer": "ThS.Nguyễn Thị Thảo Nhi",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.A211",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 443,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (2)_GDM",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A214",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 444,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (3)",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.A213",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 445,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (4)",
+    "lecturer": "ThS.Nguyễn Lê Ngọc Trâm",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "K.A314",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 446,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (5)_GEL_TA",
+    "lecturer": "ThS.Nguyễn Thị Thảo Nhi",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "K.A313",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 447,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (6)",
+    "lecturer": "TS.Đặng Vinh",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A314",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 448,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (7)",
+    "lecturer": "TS.Đặng Vinh",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "K.A211",
+    "weeks": "7->19",
+    "Sỉ số": "5",
+    "teachingPlan": ""
+  },
+  {
+    "id": 449,
+    "name": "Nhập môn ngành & kỹ năng mềm (BA) (8)",
+    "lecturer": "TS.Đặng Vinh",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "K.A214",
+    "weeks": "7->19",
+    "Sỉ số": "20",
+    "teachingPlan": ""
+  },
+  {
+    "id": 450,
+    "name": "Nhập môn ngành và kỹ năng mềm (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Sáu | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 451,
+    "name": "Nhập môn ngành và kỹ năng mềm (CE) (2)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 452,
+    "name": "Nhập môn ngành và kỹ năng mềm (CE) (3)_AS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.B301",
+    "weeks": "10->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 453,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (1)_GIT,SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 454,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (10)_AI,AD",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 455,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (11)_AI,AD",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 456,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (12)_DA,MT",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 457,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (13)_DA,MT",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 458,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (14)_NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 459,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (2)_GIT,SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 460,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (3)_GIT,SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 461,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (4)_SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 462,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (5)_SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 463,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (6)_SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 464,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (7)_SE",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 465,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (8)_ITe",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 466,
+    "name": "Nhập môn ngành và kỹ năng mềm (IT) (9)_GT (CN game)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "(Chọn)",
+    "weeks": "",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 467,
+    "name": "Nhập môn quản lý dự án (1)",
+    "lecturer": "TS.Bùi Nữ Thanh Hà",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A207",
+    "weeks": "5->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 468,
+    "name": "Nhập môn Tài chính số (1)",
+    "lecturer": "ThS.Nguyễn Thị Kim Ngọc",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A111",
+    "weeks": "5->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 469,
+    "name": "Phân tích dữ liệu (1)",
+    "lecturer": "TS.Nguyễn Thanh",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A405",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 470,
+    "name": "Phân tích Marketing số (1)_GBA,DM_TA",
+    "lecturer": "TS.Nguyễn Thị Kiều Trang",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A304",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 471,
+    "name": "Phân tích Marketing số (2)",
+    "lecturer": "ThS.Nguyễn Thị Khánh Hà",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A301",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 472,
+    "name": "Phân tích tài chính doanh nghiệp (1)",
+    "lecturer": "TS.Nguyễn Thị Thanh Huyền",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.B107",
+    "weeks": "4->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 473,
+    "name": "Phân tích và thiết kế giải thuật (1)_GIT,SE_TA",
+    "lecturer": "PGS.TS.Nguyễn Thanh Bình",
+    "time": "Thứ Hai | Tiết 3->5",
+    "room": "K.A110",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 474,
+    "name": "Phân tích và thiết kế giải thuật (2)",
+    "lecturer": "ThS.Phạm Tuấn Anh",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "V.A303",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 475,
+    "name": "Phân tích và thiết kế giải thuật (3)",
+    "lecturer": "ThS.Phạm Tuấn  Anh",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A207",
+    "weeks": "4,6->17",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 476,
+    "name": "Phân tích và thiết kế giải thuật (4)_GIT_TA",
+    "lecturer": "TS.Hồ Văn Phi",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A303",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 477,
+    "name": "Phân tích và thiết kế giải thuật (5)",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "V.A210",
+    "weeks": "4,6->17",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 478,
+    "name": "Phân tích và thiết kế giải thuật (6)",
+    "lecturer": "ThS.Phạm Tuấn Anh",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A405",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 479,
+    "name": "Phân tích và thiết kế giải thuật (7)_JIT,KIT",
+    "lecturer": "ThS.Nguyễn Thanh Cẩm",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "K.A205",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 480,
+    "name": "Phân tích và thiết kế giải thuật (8)",
+    "lecturer": "TS.Hồ Văn Phi",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "K.A101",
+    "weeks": "4->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 481,
+    "name": "Phân tích và thiết kế hệ thống (1)_GIT_TA",
+    "lecturer": "PGS.TS.Nguyễn Thanh Bình",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A110",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 482,
+    "name": "Phân tích và thiết kế hệ thống (10)",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A405",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 483,
+    "name": "Phân tích và thiết kế hệ thống (11)_AI",
+    "lecturer": "ThS.Võ Văn Lường",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A311",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 484,
+    "name": "Phân tích và thiết kế hệ thống (12)",
+    "lecturer": "ThS.Võ Văn Lường",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A206",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 485,
+    "name": "Phân tích và thiết kế hệ thống (13)_GCE,CE",
+    "lecturer": "TS.Nguyễn Thanh",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A312",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 486,
+    "name": "Phân tích và thiết kế hệ thống (14)",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A314",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 487,
+    "name": "Phân tích và thiết kế hệ thống (15)",
+    "lecturer": "TS.Nguyễn Thanh",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A301",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 488,
+    "name": "Phân tích và thiết kế hệ thống (2)_GIT_TA",
+    "lecturer": "ThS.Hà Thị Minh Phương",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A207",
+    "weeks": "5->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 489,
+    "name": "Phân tích và thiết kế hệ thống (3)",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A315",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 490,
+    "name": "Phân tích và thiết kế hệ thống (4)",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A315",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 491,
+    "name": "Phân tích và thiết kế hệ thống (5)",
+    "lecturer": "TS.Nguyễn Thanh",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A502",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 492,
+    "name": "Phân tích và thiết kế hệ thống (6)",
+    "lecturer": "ThS.Lê Viết Trương",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A206",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 493,
+    "name": "Phân tích và thiết kế hệ thống (7)_JIT",
+    "lecturer": "ThS.Lê Viết Trương",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A107",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 494,
+    "name": "Phân tích và thiết kế hệ thống (8)",
+    "lecturer": "ThS.Lê Viết Trương",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A313",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 495,
+    "name": "Phân tích và thiết kế hệ thống (9)_GITe_TA",
+    "lecturer": "PGS.TS.Nguyễn Thanh Bình",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A110",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 496,
+    "name": "Pháp luật đại cương (1)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.C206",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 497,
+    "name": "Pháp luật đại cương (10)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.C205",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 498,
+    "name": "Pháp luật đại cương (11)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 499,
+    "name": "Pháp luật đại cương (12)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.C105",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 500,
+    "name": "Pháp luật đại cương (13)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.C105",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 501,
+    "name": "Pháp luật đại cương (14)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.C105",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 502,
+    "name": "Pháp luật đại cương (15)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.C105",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 503,
+    "name": "Pháp luật đại cương (16)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.C105",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 504,
+    "name": "Pháp luật đại cương (2)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.C206",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 505,
+    "name": "Pháp luật đại cương (3)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.C106",
+    "weeks": "7->21",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 506,
+    "name": "Pháp luật đại cương (4)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 507,
+    "name": "Pháp luật đại cương (5)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.C205",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 508,
+    "name": "Pháp luật đại cương (6)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.C205",
+    "weeks": "7->21",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 509,
+    "name": "Pháp luật đại cương (7)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.C205",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 510,
+    "name": "Pháp luật đại cương (8)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.C205",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 511,
+    "name": "Pháp luật đại cương (9)",
+    "lecturer": "ThS.Nguyễn Thị Phương Thảo",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.C205",
+    "weeks": "7->21",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 512,
+    "name": "Phát triển ứng dụng di động đa nền tảng (1)_GIT_TA",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A210",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 513,
+    "name": "Phát triển ứng dụng di động đa nền tảng (2)",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "V.A401",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 514,
+    "name": "Phát triển ứng dụng di động đa nền tảng (3)",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "V.A502",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 515,
+    "name": "Phát triển ứng dụng di động đa nền tảng (4)_JIT,KIT",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A105",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 516,
+    "name": "Phát triển ứng dụng di động đa nền tảng (5)_JIT,KIT",
+    "lecturer": "ThS.Ngô Lê Quân",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "K.A105",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 517,
+    "name": "Phương pháp NCKH (MIT)",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Hai | Tiết 7->9",
+    "room": "K.A101",
+    "weeks": "50->53,1->4,6,7",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 518,
+    "name": "Phương pháp NCKH trong KD (4)_GDM_TA_3 tín chỉ",
+    "lecturer": "TS.Trần Lương Nguyệt",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A211",
+    "weeks": "6->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 519,
+    "name": "Phương pháp NCKH trong KD (5)_3 tín chỉ",
+    "lecturer": "TS.Nguyễn Thanh Hoài",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A311",
+    "weeks": "6->19",
+    "Sỉ số": "66",
+    "teachingPlan": ""
+  },
+  {
+    "id": 520,
+    "name": "Phương pháp NCKH trong kinh doanh (1)_GBA_TA_2 tín chỉ",
+    "lecturer": "TS.Văn Hùng Trọng",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.A307",
+    "weeks": "4,6->17",
+    "Sỉ số": "66",
+    "teachingPlan": ""
+  },
+  {
+    "id": 521,
+    "name": "Phương pháp NCKH trong kinh doanh (2)_2 tín chỉ",
+    "lecturer": "TS.Văn Hùng Trọng",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A307",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 522,
+    "name": "Phương pháp NCKH trong kinh doanh (3)_2 tín chỉ",
+    "lecturer": "TS.Trần Lương Nguyệt",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A211",
+    "weeks": "4,6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 523,
+    "name": "Quản lý dự án Công nghệ thông tin (1)",
+    "lecturer": "ThS.Võ Văn Lường",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A405",
+    "weeks": "4,6->18",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 524,
+    "name": "Quản lý rủi ro dự án CNTT (1)",
+    "lecturer": "ThS.Đoàn Xuân Bích",
+    "time": "Thứ Bảy | Tiết 1->4",
+    "room": "K.A107",
+    "weeks": "4->17",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 525,
+    "name": "Quản trị bán hàng (1)_GBA,BA",
+    "lecturer": "ThS.Nguyễn Thị Như Quỳnh",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A213",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 526,
+    "name": "Quản trị bán hàng (2)",
+    "lecturer": "ThS.Nguyễn Thị Như Quỳnh",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A213",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 527,
+    "name": "Quản trị chất lượng dịch vụ du lịch (1)",
+    "lecturer": "ThS.Nguyễn Thị Thảo Nhi",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A211",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 528,
+    "name": "Quản trị chuỗi cung ứng (1)_GBA,BA_TA",
+    "lecturer": "ThS.Đặng Thị Thanh Minh",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 529,
+    "name": "Quản trị chuỗi cung ứng (2)",
+    "lecturer": "TS.Trần Thiện Vũ",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A107",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 530,
+    "name": "Quản trị chuỗi cung ứng (3)",
+    "lecturer": "TS.Trần Thiện Vũ",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 531,
+    "name": "Quản trị cơ sở dữ liệu (1)_GEL_TA",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A107",
+    "weeks": "6->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 532,
+    "name": "Quản trị cơ sở dữ liệu (2)",
+    "lecturer": "ThS.Lương Khánh Tý",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A311",
+    "weeks": "6->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 533,
+    "name": "Quản trị dự án phần mềm (1)_GIT,SE_TA",
+    "lecturer": "TS.Nguyễn Quang Vũ",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A111",
+    "weeks": "4->6",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 534,
+    "name": "Quản trị dự án phần mềm (2)",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A312",
+    "weeks": "4->18",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 535,
+    "name": "Quản trị dự án phần mềm (3)",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.A214",
+    "weeks": "4->18",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 536,
+    "name": "Quản trị dự án phần mềm (4)_JIT,KIT",
+    "lecturer": "TS.Nguyễn Thanh Tuấn",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A207",
+    "weeks": "4->18",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 537,
+    "name": "Quản trị học (1)_GBA_TA",
+    "lecturer": "ThS.Huỳnh Bá Thúy Diệu",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.A110",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 538,
+    "name": "Quản trị học (2)_GDM_TA",
+    "lecturer": "ThS.Huỳnh Bá Thúy Diệu",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A215",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 539,
+    "name": "Quản trị học (3)",
+    "lecturer": "TS.Đặng Vinh",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A314",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 540,
+    "name": "Quản trị học (4)_GEL",
+    "lecturer": "ThS.Nguyễn Thị Kim Ánh",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A205",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 541,
+    "name": "Quản trị học (5)",
+    "lecturer": "ThS.Vũ Thành Nhân",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A214",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 542,
+    "name": "Quản trị học (6)",
+    "lecturer": "ThS.Trần Ngọc Phương Thảo",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.A215",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 543,
+    "name": "Quản trị học (7)",
+    "lecturer": "ThS.Nguyễn Linh Giang",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A314",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 544,
+    "name": "Quản trị kho hàng (1)",
+    "lecturer": "ThS.Nguyễn Ngọc Thảo Vy",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A215",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 545,
+    "name": "Quản trị kho hàng (2)",
+    "lecturer": "ThS.Nguyễn Thị Khánh My",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A215",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 546,
+    "name": "Quản trị kinh doanh lữ hành (1)",
+    "lecturer": "ThS.Trần Ngọc Phương Thảo",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A211",
+    "weeks": "4,6->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 547,
+    "name": "Quản trị tài chính (1)",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A311",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 548,
+    "name": "Quản trị thương hiệu (1)_GBA,BA_TA",
+    "lecturer": "TS.Nguyễn Thanh Hoài",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A212",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 549,
+    "name": "Quản trị thương hiệu (2)",
+    "lecturer": "ThS.Nguyễn Thị Kim Ánh",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A111",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 550,
+    "name": "Quản trị trải nghiệm khách hàng (1)_GBA,DM",
+    "lecturer": "ThS.Nguyễn Thị Kim Ánh",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A111",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 551,
+    "name": "Quản trị trải nghiệm khách hàng (2)",
+    "lecturer": "ThS.Lê Thị Hải Vân",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A212",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 552,
+    "name": "Quản trị xuất nhập khẩu (1)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A103",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 553,
+    "name": "Quản trị xuất nhập khẩu (2)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A103",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 554,
+    "name": "Quảng cáo hiển thị và video (1)_GBA,DM_TA",
+    "lecturer": "TS.Nguyễn Thị Kiều Trang",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "V.A301",
+    "weeks": "4->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 555,
+    "name": "Quảng cáo hiển thị và video (2)",
+    "lecturer": "ThS.Nguyễn Thị Khánh Hà",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "V.A303",
+    "weeks": "4,6->17",
+    "Sỉ số": "62",
+    "teachingPlan": ""
+  },
+  {
+    "id": 556,
+    "name": "Thanh toán điện tử (1)_GBA,BA",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "V.A301",
+    "weeks": "4->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 557,
+    "name": "Thanh toán quốc tế (1)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A113",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 558,
+    "name": "Thanh toán quốc tế (2)",
+    "lecturer": "ThS.Ngô Thị Hiền Trang",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A113",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 559,
+    "name": "Thanh toán quốc tế trong du lịch (1)",
+    "lecturer": "ThS.Vũ Thị Tuyết Mai",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.A313",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 560,
+    "name": "Thị giác máy tính (1)",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A402",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 561,
+    "name": "Thiết kế bộ ấn phẩm văn phòng (1)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A211",
+    "weeks": "4,6->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 562,
+    "name": "Thiết kế FPGA/ASIC với Verilog (1)",
+    "lecturer": "TS.Dương Ngọc Pháp",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.A315",
+    "weeks": "4,6->19",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 563,
+    "name": "Thiết kế hình hiệu (TV intro) (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 564,
+    "name": "Thiết kế hoạt hình 2 chiều (1)",
+    "lecturer": "ThS.Nguyễn Thị Thanh Thúy",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A403",
+    "weeks": "4->15",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 565,
+    "name": "Thiết kế IC số (1)_TA",
+    "lecturer": "TS.Dương Ngọc Pháp",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A315",
+    "weeks": "4,6->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 566,
+    "name": "Thiết kế IC tương tự (1)_TA",
+    "lecturer": "ThS.Nguyễn Thị Huyền Trang",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A212",
+    "weeks": "4->18",
+    "Sỉ số": "30",
+    "teachingPlan": ""
+  },
+  {
+    "id": 567,
+    "name": "Thiết kế Logo (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A210",
+    "weeks": "4->15",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 568,
+    "name": "Thiết kế nhân vật 2 chiều (1)",
+    "lecturer": "ThS.Trần Thị Hạ Quyên",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A403",
+    "weeks": "4->15",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 569,
+    "name": "Thiết kế nhân vật 2 chiều (2)",
+    "lecturer": "ThS.Trần Thị Hạ Quyên",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A212",
+    "weeks": "4->15",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 570,
+    "name": "Thiết kế nhân vật 3 chiều (1)",
+    "lecturer": "ThS.Phan Đăng Thiếu Hiệp",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A210",
+    "weeks": "4,6->16",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 571,
+    "name": "Thiết kế Poster (1)",
+    "lecturer": "ThS.Trần Thị Thúy Ngọc",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A401",
+    "weeks": "4->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 572,
+    "name": "Thiết kế UX/UI (1)_GIT,SE_TA",
+    "lecturer": "TS.Trần Văn Đại",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "V.A211",
+    "weeks": "4->16",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 573,
+    "name": "Thiết kế UX/UI (2)",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "V.A214",
+    "weeks": "4->16",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 574,
+    "name": "Thiết kế UX/UI (3)",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "V.A214",
+    "weeks": "4->16",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 575,
+    "name": "Thiết kế UX/UI (4)_JIT,KIT",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Năm | Tiết 1->3",
+    "room": "K.A301",
+    "weeks": "4->16",
+    "Sỉ số": "67",
+    "teachingPlan": ""
+  },
+  {
+    "id": 576,
+    "name": "Thiết kế và xây dựng hệ thống mạng (1)",
+    "lecturer": "ThS.Lê Kim Trọng",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A304",
+    "weeks": "4->15",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 577,
+    "name": "Thiết kế và xây dựng hệ thống mạng (2)",
+    "lecturer": "ThS.Lê Kim Trọng",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B302",
+    "weeks": "4,6->16",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 578,
+    "name": "Thiết kế VLSI (1)",
+    "lecturer": "ThS.Hồ Anh Trang",
+    "time": "Thứ Bảy | Tiết 6->9",
+    "room": "K.A103",
+    "weeks": "4->6",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 579,
+    "name": "Thiết kế VLSI (2)",
+    "lecturer": "ThS.Hồ Anh  Trang",
+    "time": "Thứ Bảy | Tiết 1->4",
+    "room": "K.A103",
+    "weeks": "4->6",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 580,
+    "name": "Thiết kế website (1)",
+    "lecturer": "ThS.Võ Ngọc Đạt",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A303",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 581,
+    "name": "Thiết kế Website Thương mại điện tử 2 (1)_GBA,BA",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "V.A211",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 582,
+    "name": "Thiết kế Website Thương mại điện tử 2 (2)",
+    "lecturer": "ThS.Nguyễn Ngọc Huyền Trân",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "V.A211",
+    "weeks": "4,6->17",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 583,
+    "name": "Thống kê kinh doanh (1)_GBA",
+    "lecturer": "TS.Lê Thị Minh Đức",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A301",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 584,
+    "name": "Thống kê kinh doanh (2)_GEL",
+    "lecturer": "TS.Lê Thị Minh Đức",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A206",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 585,
+    "name": "Thống kê kinh doanh (3)",
+    "lecturer": "ThS.Trần Ngọc Phương Thảo",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A206",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 586,
+    "name": "Thống kê kinh doanh (4)",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A303",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 587,
+    "name": "Thống kê kinh doanh (5)",
+    "lecturer": "TS.Nguyễn Thị Thu Đến",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A303",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 588,
+    "name": "Thực hành mô phỏng trong Logistics (1)",
+    "lecturer": "TS.Lê Phước Cửu Long",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "V.A301",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 589,
+    "name": "Thực hành mô phỏng trong Logistics (2)",
+    "lecturer": "TS.Lê Phước Cửu Long",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A301",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 594,
+    "name": "Thực tập doanh nghiệp (IT) (2)_IR,NS_3 tín chỉ",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 595,
+    "name": "Thực tập thực tế (CE) (1)",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 596,
+    "name": "Thực tập thực tế (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 597,
+    "name": "Thực tập thực tế (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 598,
+    "name": "Thực tập tốt nghiệp (BA)_K19->K21",
+    "lecturer": "Khoa.KTS _TMĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "4->17",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 600,
+    "name": "Thực tập tốt nghiệp (CE) (2)_lớp mở bổ sung",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 601,
+    "name": "Thực tập tốt nghiệp (IT) (1)",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53,1->4",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 602,
+    "name": "Thực tập tốt nghiệp (IT) (2)_IR,NS",
+    "lecturer": "Khoa.KTMT _ĐT",
+    "time": "Thứ _ | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "46->53,1->4",
+    "Sỉ số": "1500",
+    "teachingPlan": ""
+  },
+  {
+    "id": 603,
+    "name": "Thực tập tốt nghiệp (IT) (3)_lớp mở bổ sung",
+    "lecturer": "Khoa.KH MT",
+    "time": "Thứ Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->18",
+    "Sỉ số": "80",
+    "teachingPlan": ""
+  },
+  {
+    "id": 604,
+    "name": "Thực tập tốt nghiệp IT(3C)_2",
+    "lecturer": "TS.Hoàng Hữu Đức",
+    "time": "Thứ Sáu | Tiết 7->8",
+    "room": "(Chọn)",
+    "weeks": "48->56",
+    "Sỉ số": "",
+    "teachingPlan": ""
+  },
+  {
+    "id": 605,
+    "name": "Thương mại điện tử (1)_GBA",
+    "lecturer": "ThS.Trương Thị Viên",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A303",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 606,
+    "name": "Thương mại điện tử cơ bản (1)",
+    "lecturer": "ThS.Trương Thị Viên",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A213",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 607,
+    "name": "Tiếng anh 1 (1)",
+    "lecturer": "ThS.Lê Xuân Việt Hương",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B102",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 608,
+    "name": "Tiếng anh 1 (10)",
+    "lecturer": "ThS.Lê Thị Hải Yến",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B101",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 609,
+    "name": "Tiếng anh 1 (11)",
+    "lecturer": "ThS.Lê Thị Hải Yến",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B101",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 610,
+    "name": "Tiếng anh 1 (12)",
+    "lecturer": "ThS.Trần Vũ Mai Yên",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B102",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 611,
+    "name": "Tiếng anh 1 (13)",
+    "lecturer": "ThS.Trần Vũ Mai Yên",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B303",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 612,
+    "name": "Tiếng anh 1 (14)",
+    "lecturer": "ThS.Trần Văn Thành",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B304",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 613,
+    "name": "Tiếng anh 1 (15)",
+    "lecturer": "ThS.Tôn Nữ Xuân Phương",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 614,
+    "name": "Tiếng anh 1 (16)",
+    "lecturer": "ThS.Huỳnh Thị Bích Ngọc",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B304",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 615,
+    "name": "Tiếng anh 1 (17)",
+    "lecturer": "ThS.Tôn Nữ Xuân Phương",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B304",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 616,
+    "name": "Tiếng anh 1 (18)",
+    "lecturer": "TS.Phạm Thị Tài",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.B102",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 617,
+    "name": "Tiếng anh 1 (19)",
+    "lecturer": "ThS.Nguyễn Thanh Hồng Ngọc",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B303",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 618,
+    "name": "Tiếng anh 1 (2)",
+    "lecturer": "ThS.Lê Xuân Việt Hương",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.B102",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 619,
+    "name": "Tiếng anh 1 (20)",
+    "lecturer": "TS.Nguyễn Thị Thu Hướng",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 620,
+    "name": "Tiếng anh 1 (21)",
+    "lecturer": "ThS.Chế Viết Xuân",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.B103",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 621,
+    "name": "Tiếng anh 1 (22)",
+    "lecturer": "ThS.Nguyễn Đặng Nguyên Phương",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B305",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 622,
+    "name": "Tiếng anh 1 (23)",
+    "lecturer": "ThS.Nguyễn Thanh Hồng Ngọc",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.B303",
+    "weeks": "10->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 623,
+    "name": "Tiếng anh 1 (24)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B307",
+    "weeks": "10->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 624,
+    "name": "Tiếng anh 1 (25)",
+    "lecturer": "ThS.Tôn Nữ Xuân Phương",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B307",
+    "weeks": "10->21",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 625,
+    "name": "Tiếng anh 1 (3)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B103",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 626,
+    "name": "Tiếng anh 1 (4)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.B103",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 627,
+    "name": "Tiếng anh 1 (5)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 628,
+    "name": "Tiếng anh 1 (6)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 629,
+    "name": "Tiếng anh 1 (7)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 630,
+    "name": "Tiếng anh 1 (8)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 631,
+    "name": "Tiếng anh 1 (9)",
+    "lecturer": "TS.Lê Mai Anh",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B106",
+    "weeks": "10->21",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 632,
+    "name": "Tiếng anh 2 (1)",
+    "lecturer": "ThS.Lê Xuân Việt Hương",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 633,
+    "name": "Tiếng anh 2 (2)",
+    "lecturer": "ThS.Lê Xuân Việt Hương",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 634,
+    "name": "Tiếng anh 2 (3)",
+    "lecturer": "ThS.Lê Xuân Việt Hương",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 635,
+    "name": "Tiếng anh 2 (4)",
+    "lecturer": ".",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 636,
+    "name": "Tiếng anh 3 (1)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 637,
+    "name": "Tiếng anh 3 (10)",
+    "lecturer": "ThS.Hồ Phạm Xuân Phương",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 638,
+    "name": "Tiếng anh 3 (11)",
+    "lecturer": "ThS.Lê Thị Nhi",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 639,
+    "name": "Tiếng anh 3 (12)",
+    "lecturer": "ThS.Lê Thị Nhi",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 640,
+    "name": "Tiếng anh 3 (13)",
+    "lecturer": "ThS.Lê Thị Nhi",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.B107",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 641,
+    "name": "Tiếng anh 3 (14)",
+    "lecturer": "TS.Phạm Thị Tài",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.B107",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 642,
+    "name": "Tiếng anh 3 (15)",
+    "lecturer": "TS.Phạm Thị Tài",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.B107",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 643,
+    "name": "Tiếng anh 3 (16)",
+    "lecturer": "TS.Nguyễn Nữ Thùy Uyên",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.B101",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 644,
+    "name": "Tiếng anh 3 (17)",
+    "lecturer": "TS.Nguyễn Nữ Thùy Uyên",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.B101",
+    "weeks": "5->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 645,
+    "name": "Tiếng anh 3 (18)",
+    "lecturer": "ThS.Tôn Nữ Xuân Phương",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.B103",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 646,
+    "name": "Tiếng anh 3 (19)",
+    "lecturer": "ThS.Tôn Nữ Xuân Phương",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.B103",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 647,
+    "name": "Tiếng anh 3 (2)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 648,
+    "name": "Tiếng anh 3 (20)",
+    "lecturer": "ThS.Trần Thị Thanh Nhã",
+    "time": "Thứ Ba | Tiết 1->2",
+    "room": "K.B106",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 649,
+    "name": "Tiếng anh 3 (21)",
+    "lecturer": "ThS.Trần Thị Thanh Nhã",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.B106",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 650,
+    "name": "Tiếng anh 3 (22)",
+    "lecturer": "ThS.Lê Thị Nhi",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.B107",
+    "weeks": "6->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 651,
+    "name": "Tiếng anh 3 (3)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 652,
+    "name": "Tiếng anh 3 (4)",
+    "lecturer": "ThS.Nguyễn Thị Diệu Thanh",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 653,
+    "name": "Tiếng anh 3 (5)",
+    "lecturer": "ThS.Trần Thị Túy Phượng",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 654,
+    "name": "Tiếng anh 3 (6)",
+    "lecturer": "ThS.Trần Thị Túy Phượng",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 655,
+    "name": "Tiếng anh 3 (7)",
+    "lecturer": "ThS.Trần Thị Túy Phượng",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 656,
+    "name": "Tiếng anh 3 (8)",
+    "lecturer": "ThS.Trần Thị Túy Phượng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.B101",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 657,
+    "name": "Tiếng anh 3 (9)",
+    "lecturer": "ThS.Hồ Phạm Xuân Phương",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.B102",
+    "weeks": "6->20",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 658,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (1)",
+    "lecturer": "ThS.Bùi Trần Huân",
+    "time": "Thứ Sáu | Tiết 1->3",
+    "room": "K.B101",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 659,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (2)",
+    "lecturer": "TS.Ngô Hải Quỳnh",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.B103",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 660,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (3)",
+    "lecturer": "TS.Ngô Hải Quỳnh",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "K.B107",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 661,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (4)",
+    "lecturer": "ThS.Nguyễn Thị Thảo Nhi",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "K.B103",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 662,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (5)",
+    "lecturer": "ThS.Nguyễn Thị Thảo Nhi",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.B107",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 663,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (6)",
+    "lecturer": "ThS.Đinh Nguyễn Khánh Phương",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.B107",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 664,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (7)",
+    "lecturer": "ThS.Vũ Thành Nhân",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.B304",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 665,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (8)",
+    "lecturer": "ThS.Vũ Thành Nhân",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.B306",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 666,
+    "name": "Tiếng Anh chuyên ngành 1 (BA) (9)",
+    "lecturer": "ThS.Vũ Thành Nhân",
+    "time": "Thứ Sáu | Tiết 6->8",
+    "room": "K.B303",
+    "weeks": "7->19",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 667,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (1)",
+    "lecturer": "TS.Vương Công Đạt",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B308",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 668,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (2)",
+    "lecturer": "TS.Vương Công Đạt",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.B305",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 669,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (3)",
+    "lecturer": "ThS.Nguyễn Thị Huyền Trang",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.B303",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 670,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (4)",
+    "lecturer": "ThS.Nguyễn Thị Huyền Trang",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.B303",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 671,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (5)",
+    "lecturer": ".",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 672,
+    "name": "Tiếng Anh chuyên ngành 1 (CE) (6)",
+    "lecturer": ".",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 673,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (1)",
+    "lecturer": "TS.Đặng Đại Thọ",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.B107",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 674,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (10)",
+    "lecturer": "ThS.Nguyễn Đỗ Công Pháp",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B303",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 675,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (11)",
+    "lecturer": "ThS.Nguyễn Đỗ Công Pháp",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.B303",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 676,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (12)",
+    "lecturer": "ThS.Lê Đình Nguyên",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B306",
+    "weeks": "7->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 677,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (13)",
+    "lecturer": "ThS.Lê Đình  Nguyên",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.B304",
+    "weeks": "7->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 678,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (14)",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.B107",
+    "weeks": "7->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 679,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (15)",
+    "lecturer": "ThS.Mai Lam",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.B305",
+    "weeks": "7->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 680,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (16)_NS",
+    "lecturer": "ThS.Ninh Khánh Chi",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B303",
+    "weeks": "7->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 681,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (2)",
+    "lecturer": "TS.Đặng Đại Thọ",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.B103",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 682,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (3)",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.B106",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 683,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (4)",
+    "lecturer": "TS.Lý Quỳnh Trân",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B306",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 684,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (5)",
+    "lecturer": "TS.Nguyễn Văn Lợi",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A114",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 685,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (6)",
+    "lecturer": "ThS.Bank Agribank",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "(Chọn)",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 686,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (7)",
+    "lecturer": "ThS.Hà Thị Minh Phương",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.B106",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 687,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (8)",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.B307",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 688,
+    "name": "Tiếng Anh chuyên ngành 1 (IT) (9)",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.B107",
+    "weeks": "7->18",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 689,
+    "name": "Tiếng Anh học thuật (MIT)",
+    "lecturer": "TS.Trần Thị Thùy Liên",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A101",
+    "weeks": "49->53,1->4,6",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 690,
+    "name": "Tiếng anh nâng cao 1 (1)",
+    "lecturer": "ThS.Phan Thị Hồng Việt",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.B103",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 691,
+    "name": "Tiếng Anh nâng cao 2 (1)",
+    "lecturer": "TS.Trần Thị Thùy Liên",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.B103",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 692,
+    "name": "Tiếng Anh nâng cao 2 (2)",
+    "lecturer": "TS.Trần Thị Thùy Liên",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.B103",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 693,
+    "name": "Tiếng Anh nâng cao 2 (3)",
+    "lecturer": "ThS.Phan Thị Hồng Việt",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.B101",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 694,
+    "name": "Tiếng Anh nâng cao 2 (4)",
+    "lecturer": "ThS.Phan Thị Hồng Việt",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.B101",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 695,
+    "name": "Tiếng Anh nâng cao 2 (5)",
+    "lecturer": "ThS.Phan Thị Hồng Việt",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.B103",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 696,
+    "name": "Tiếng Anh nâng cao 2 (6)",
+    "lecturer": "ThS.Phạm Trần Mộc Miêng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.B107",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 697,
+    "name": "Tiếng Anh nâng cao 2 (7)",
+    "lecturer": "ThS.Phạm Trần Mộc Miêng",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.B107",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 698,
+    "name": "Tiếng Anh nâng cao 2 (8)",
+    "lecturer": "ThS.Lê Thị Kim Tuyến",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A211",
+    "weeks": "6->18",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 699,
+    "name": "Tiếng Anh nâng cao 3 (1)",
+    "lecturer": "ThS.Lê Thị Kim Tuyến",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.B102",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 700,
+    "name": "Tiếng Anh nâng cao 3 (2)",
+    "lecturer": "ThS.Lê Thị Kim Tuyến",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.B102",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 701,
+    "name": "Tiếng Anh nâng cao 3 (3)",
+    "lecturer": "ThS.Võ Thị Thanh Ngà",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.B102",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 702,
+    "name": "Tiếng Anh nâng cao 3 (4)",
+    "lecturer": "ThS.Võ Thị Thanh Ngà",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.B102",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 703,
+    "name": "Tiếng Anh nâng cao 3 (5)",
+    "lecturer": "ThS.Nguyễn Thị Tuyết",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.B101",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 704,
+    "name": "Tiếng Anh nâng cao 3 (6)",
+    "lecturer": "ThS.Nguyễn Thị Tuyết",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.B101",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 705,
+    "name": "Tiếng Hàn 1 (1)",
+    "lecturer": "ThS.Nguyễn Hà Phương",
+    "time": "Thứ Năm | Tiết 7->9",
+    "room": "K.A107",
+    "weeks": "6->15",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 706,
+    "name": "Tiếng Hàn 2 (1)",
+    "lecturer": ".",
+    "time": "Thứ Năm | Tiết _",
+    "room": "(Chọn)",
+    "weeks": "5->16",
+    "Sỉ số": "0",
+    "teachingPlan": ""
+  },
+  {
+    "id": 707,
+    "name": "Tiếng Hàn doanh nghiệp 1 (1)",
+    "lecturer": "CN.Cao Thị Minh Ngọc",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A107",
+    "weeks": "4,6->19",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 708,
+    "name": "Tiếng Hàn doanh nghiệp 3 (1)",
+    "lecturer": "CN.Nguyễn Ngân Hoa",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4,6->16",
+    "Sỉ số": "30",
+    "teachingPlan": ""
+  },
+  {
+    "id": 709,
+    "name": "Tiếng Hàn doanh nghiệp 3 (2)",
+    "lecturer": "CN.Nguyễn Ngân Hoa",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "K.A105 (P. tiếng Hàn)",
+    "weeks": "4,6->16",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 710,
+    "name": "Tiếng Nhật 2 (1)",
+    "lecturer": "CN.Đoàn Thanh Trầm",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A201",
+    "weeks": "4,6->17",
+    "Sỉ số": "45",
+    "teachingPlan": ""
+  },
+
+  {
+    "id": 711,
+    "name": "Tiếng Nhật 2 (2)",
+    "lecturer": "CN.Đoàn Thanh Trầm",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.A201",
+    "weeks": "4,6->17",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 712,
+    "name": "Tiếng Nhật nâng cao 1 (1)",
+    "lecturer": "..Nguyễn Thị Cẩm Hà",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A201",
+    "weeks": "4,6->17",
+    "Sỉ số": "40",
+    "teachingPlan": ""
+  },
+  {
+    "id": 713,
+    "name": "Tin học đại cương (1)_GBA",
+    "lecturer": "TS.Nguyễn Thị Thanh Huyền",
+    "time": "Thứ Hai | Tiết 1->3",
+    "room": "K.A215",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 714,
+    "name": "Tin học đại cương (2)_GDM",
+    "lecturer": "TS.Nguyễn Thị Thanh Huyền",
+    "time": "Thứ Hai | Tiết 6->8",
+    "room": "K.A215",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 715,
+    "name": "Tin học đại cương (3)",
+    "lecturer": "TS.Phan Văn Thành",
+    "time": "Thứ Ba | Tiết 1->3",
+    "room": "K.A215",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 716,
+    "name": "Tin học đại cương (4)_GEL_TA",
+    "lecturer": "ThS.Đặng Thị Thanh Minh",
+    "time": "Thứ Tư | Tiết 6->8",
+    "room": "K.A215",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 717,
+    "name": "Tin học đại cương (5)",
+    "lecturer": "ThS.Vũ Thu Hà",
+    "time": "Thứ Hai | Tiết 7->9",
+    "room": "K.A207",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 718,
+    "name": "Tin học đại cương (6)",
+    "lecturer": "TS.Lê Thị Minh Đức",
+    "time": "Thứ Tư | Tiết 1->3",
+    "room": "K.A215",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 719,
+    "name": "Tin học đại cương (7)",
+    "lecturer": "ThS.Nguyễn Thị Thu Ngân",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B204",
+    "weeks": "7->20",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 720,
+    "name": "Tin học đại cương (7)_Nhóm 1",
+    "lecturer": ".",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "(Chọn)",
+    "weeks": "12->19",
+    "Sỉ số": "30",
+    "teachingPlan": ""
+  },
+  {
+    "id": 721,
+    "name": "Tin học đại cương (7)_Nhóm 2",
+    "lecturer": "ThS.Bank Agribank",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "(Chọn)",
+    "weeks": "12->19",
+    "Sỉ số": "30",
+    "teachingPlan": ""
+  },
+  {
+    "id": 722,
+    "name": "Tin học ứng dụng trong kinh doanh (1)",
+    "lecturer": "TS.Nguyễn Thị Thanh Huyền",
+    "time": "Thứ Ba | Tiết 6->8",
+    "room": "K.A312",
+    "weeks": "7->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 723,
+    "name": "Tổ chức vận tải đa phương thức (1)",
+    "lecturer": "TS.Võ Thị Thanh Thảo",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A112",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 724,
+    "name": "Tổ chức vận tải đa phương thức (2)",
+    "lecturer": "TS.Võ Thị Thanh  Thảo",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A112",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 725,
+    "name": "Toán cho học máy (1)",
+    "lecturer": "TS.Nguyễn Hữu Nhật Minh",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.A305",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 726,
+    "name": "Toán rời rạc (1)",
+    "lecturer": "ThS.Đặng Thị Kim Ngân",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A112",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 727,
+    "name": "Toán trong khoa học máy tính (MIT)",
+    "lecturer": "TS.Đặng Văn Cường",
+    "time": "Thứ Ba | Tiết 7->9",
+    "room": "K.A101",
+    "weeks": "49->53,1->4,6",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 728,
+    "name": "Toán ứng dụng trong kinh tế (1)_GBA",
+    "lecturer": "ThS.Ngô Thị Bích Thủy",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A301",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 729,
+    "name": "Toán ứng dụng trong kinh tế (2)_GEL",
+    "lecturer": "ThS.Ngô Thị Bích Thủy",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "V.A301",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 730,
+    "name": "Toán ứng dụng trong kinh tế (3)",
+    "lecturer": "ThS.Ngô Thị Bích Thủy",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A311",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 731,
+    "name": "Toán ứng dụng trong kinh tế (4)",
+    "lecturer": "TS.Phan Văn Thành",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A309",
+    "weeks": "6->17",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 732,
+    "name": "Toán ứng dụng trong kinh tế (5)",
+    "lecturer": "TS.Phan Văn Thành",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.A305",
+    "weeks": "5->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 733,
+    "name": "Tổng quan về du lịch (1)",
+    "lecturer": "ThS.Trần Ngọc Phương Thảo",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A302",
+    "weeks": "5->16",
+    "Sỉ số": "50",
+    "teachingPlan": ""
+  },
+  {
+    "id": 734,
+    "name": "Trí tuệ nhân tạo (1)_GIT_TA",
+    "lecturer": "TS.Đặng Đại Thọ",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.A313",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 735,
+    "name": "Trí tuệ nhân tạo (10)",
+    "lecturer": "TS.Đặng Đại  Thọ",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.A114",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 736,
+    "name": "Trí tuệ nhân tạo (11)",
+    "lecturer": "ThS.Lê Đình Nguyên",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "V.A211",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 737,
+    "name": "Trí tuệ nhân tạo (2)_GIT_TA",
+    "lecturer": "TS.Đặng Đại Thọ",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "V.A402",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 738,
+    "name": "Trí tuệ nhân tạo (3)",
+    "lecturer": "ThS.Nguyễn Đỗ Công Pháp",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "V.A505",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 739,
+    "name": "Trí tuệ nhân tạo (4)",
+    "lecturer": "ThS.Nguyễn Đỗ Công Pháp",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "V.A505",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 740,
+    "name": "Trí tuệ nhân tạo (5)",
+    "lecturer": "TS.Trần Uyên Trang",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "V.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 741,
+    "name": "Trí tuệ nhân tạo (6)_JIT,KIT",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Tư | Tiết 6->10",
+    "room": "K.A205",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 742,
+    "name": "Trí tuệ nhân tạo (7)_JIT,KIT",
+    "lecturer": "TS.Lê Thị Thu Nga",
+    "time": "Thứ Sáu | Tiết 1->5",
+    "room": "K.A205",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 743,
+    "name": "Trí tuệ nhân tạo (8)",
+    "lecturer": "ThS.Nguyễn Đỗ Công Pháp",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A212",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 744,
+    "name": "Trí tuệ nhân tạo (9)",
+    "lecturer": "TS.Nguyễn Sĩ Thìn",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A403",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 745,
+    "name": "Triết học (MIT)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.A101",
+    "weeks": "49->53,1->7",
+    "Sỉ số": "10",
+    "teachingPlan": ""
+  },
+  {
+    "id": 746,
+    "name": "Triết học Mác - Lênin (1)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Hai | Tiết 1->4",
+    "room": "K.C204",
+    "weeks": "4,6->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 747,
+    "name": "Triết học Mác - Lênin (2)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Năm | Tiết 6->9",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 748,
+    "name": "Triết học Mác - Lênin (3)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Năm | Tiết 1->4",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 749,
+    "name": "Triết học Mác - Lênin (4)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.C204",
+    "weeks": "4,6->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 750,
+    "name": "Triết học Mác - Lênin (5)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Ba | Tiết 1->4",
+    "room": "K.C204",
+    "weeks": "4,6->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 751,
+    "name": "Triết học Mác - Lênin (6)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 752,
+    "name": "Triết học Mác - Lênin (7)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 753,
+    "name": "Triết học Mác - Lênin (8)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Sáu | Tiết 6->9",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 754,
+    "name": "Triết học Mác - Lênin (9)",
+    "lecturer": "ThS.Trần Văn Thái",
+    "time": "Thứ Sáu | Tiết 1->4",
+    "room": "K.C204",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 755,
+    "name": "Trường điện từ và lab (1)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Tư | Tiết 6->9",
+    "room": "V.A402",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 756,
+    "name": "Truyền số liệu (1)",
+    "lecturer": "ThS.Trần Thị Trà Vinh",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.A114",
+    "weeks": "4->18",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 757,
+    "name": "Truyền số liệu (2)",
+    "lecturer": "TS.Dương Hữu Ái",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A214",
+    "weeks": "4,6->19",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 758,
+    "name": "Truyền thông đại chúng ứng dụng (1)",
+    "lecturer": "ThS.Lê Thị Hải Vân",
+    "time": "Thứ Năm | Tiết 6->8",
+    "room": "V.A303",
+    "weeks": "4->13",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 759,
+    "name": "Truyền thông marketing tích hợp (IMC) (1)_GBA,DM_TA",
+    "lecturer": "TS.Ngô Hải Quỳnh",
+    "time": "Thứ Tư | Tiết 1->4",
+    "room": "V.A207",
+    "weeks": "4->15",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 760,
+    "name": "Truyền thông marketing tích hợp (IMC) (2)",
+    "lecturer": "ThS.Nguyễn Thị Khánh Hà",
+    "time": "Thứ Hai | Tiết 6->9",
+    "room": "V.A303",
+    "weeks": "4,6->16",
+    "Sỉ số": "68",
+    "teachingPlan": ""
+  },
+  {
+    "id": 761,
+    "name": "Tư tưởng Hồ Chí Minh (1)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 762,
+    "name": "Tư tưởng Hồ Chí Minh (10)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 763,
+    "name": "Tư tưởng Hồ Chí Minh (11)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 764,
+    "name": "Tư tưởng Hồ Chí Minh (12)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 765,
+    "name": "Tư tưởng Hồ Chí Minh (2)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 766,
+    "name": "Tư tưởng Hồ Chí Minh (3)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 767,
+    "name": "Tư tưởng Hồ Chí Minh (4)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.C106",
+    "weeks": "4,6->19",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 768,
+    "name": "Tư tưởng Hồ Chí Minh (5)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "76",
+    "teachingPlan": ""
+  },
+  {
+    "id": 769,
+    "name": "Tư tưởng Hồ Chí Minh (6)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 770,
+    "name": "Tư tưởng Hồ Chí Minh (7)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Tư | Tiết 8->9",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 771,
+    "name": "Tư tưởng Hồ Chí Minh (8)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Tư | Tiết 6->7",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 772,
+    "name": "Tư tưởng Hồ Chí Minh (9)",
+    "lecturer": "TS.Dương Thị Phượng",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "70",
+    "teachingPlan": ""
+  },
+  {
+    "id": 773,
+    "name": "Vật lý (1)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.A111",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 774,
+    "name": "Vật lý (10)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Ba | Tiết 3->4",
+    "room": "K.A214",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 775,
+    "name": "Vật lý (11)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Hai | Tiết 6->7",
+    "room": "K.A213",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 776,
+    "name": "Vật lý (12)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Hai | Tiết 8->9",
+    "room": "K.A213",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 777,
+    "name": "Vật lý (13)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Năm | Tiết 6->7",
+    "room": "K.A112",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 778,
+    "name": "Vật lý (14)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Năm | Tiết 8->9",
+    "room": "K.A112",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 779,
+    "name": "Vật lý (15)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Năm | Tiết 3->4",
+    "room": "K.A114",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 780,
+    "name": "Vật lý (2)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A111",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 781,
+    "name": "Vật lý (3)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.A113",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 782,
+    "name": "Vật lý (4)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A113",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 783,
+    "name": "Vật lý (5)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Ba | Tiết 6->7",
+    "room": "K.A114",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 784,
+    "name": "Vật lý (6)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Ba | Tiết 8->9",
+    "room": "K.A114",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 785,
+    "name": "Vật lý (7)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Hai | Tiết 1->2",
+    "room": "K.A211",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 786,
+    "name": "Vật lý (8)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Hai | Tiết 3->4",
+    "room": "K.A212",
+    "weeks": "6->20",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 787,
+    "name": "Vật lý (9)",
+    "lecturer": "ThS.Huỳnh Thị Thanh Tuyền",
+    "time": "Thứ Năm | Tiết 1->2",
+    "room": "K.A114",
+    "weeks": "5->19",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 788,
+    "name": "Xác suất thống kê (1)_AI",
+    "lecturer": "TS.Đặng Văn Cường",
+    "time": "Thứ Sáu | Tiết 6->7",
+    "room": "K.A112",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 789,
+    "name": "Xác suất thống kê (2)_AI_TA",
+    "lecturer": "TS.Đặng Văn Cường",
+    "time": "Thứ Sáu | Tiết 8->9",
+    "room": "K.A112",
+    "weeks": "5->19",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  },
+  {
+    "id": 790,
+    "name": "Xác suất thống kê (3)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Tư | Tiết 3->4",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 791,
+    "name": "Xác suất thống kê (4)",
+    "lecturer": "ThS.Hồ Thị Hồng Liên",
+    "time": "Thứ Tư | Tiết 1->2",
+    "room": "K.A113",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 792,
+    "name": "Xử lý ảnh cơ bản (1)",
+    "lecturer": "ThS.Nguyễn Thị Thanh Thúy",
+    "time": "Thứ Ba | Tiết 6->9",
+    "room": "K.B301",
+    "weeks": "4,6->16",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 793,
+    "name": "Xử lý tín hiệu số (1)",
+    "lecturer": "ThS.Nguyễn Thị Huyền Trang",
+    "time": "Thứ Sáu | Tiết 1->2",
+    "room": "K.C106",
+    "weeks": "4->18",
+    "Sỉ số": "65",
+    "teachingPlan": ""
+  },
+  {
+    "id": 794,
+    "name": "Xúc tiến du lịch (1)",
+    "lecturer": "TS.Trần Lương Nguyệt",
+    "time": "Thứ Sáu | Tiết 3->4",
+    "room": "K.A301",
+    "weeks": "4->18",
+    "Sỉ số": "60",
+    "teachingPlan": ""
+  }
+]

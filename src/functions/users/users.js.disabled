@@ -1,0 +1,280 @@
+/**
+ * USER MANAGEMENT API ENDPOINTS v2.0
+ * Professional user profile and enrollment management
+ */
+
+const { app } = require('@azure/functions');
+const { AuthenticationService } = require('../services/auth-service');
+const { UserService } = require('../services/user-service');
+const { ResponseHelper } = require('../utils/response-helper');
+const { ValidationHelper } = require('../utils/validation-helper');
+
+// Initialize services
+const authService = new AuthenticationService();
+const userService = new UserService();
+const response = new ResponseHelper();
+const validator = new ValidationHelper();
+
+/**
+ * GET /api/users/me
+ * Get current user details
+ */
+app.http('users-me', {
+    methods: ['GET'],
+    route: 'users/me',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            // User is available from auth middleware
+            const userDetails = await userService.getUserDetails(request.user.userID);
+
+            return response.success(userDetails, 'User details retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get user details error:', error.message);
+            return response.serverError('Failed to get user details', error.message);
+        }
+    }
+});
+
+/**
+ * PUT /api/users/me
+ * Update user profile
+ */
+app.http('users-update', {
+    methods: ['PUT'],
+    route: 'users/me',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const body = await request.json();
+
+            // Validate request body
+            const validation = validator.validateUserUpdateRequest(body);
+            if (!validation.isValid) {
+                return response.validationError(validation.errors);
+            }
+
+            // Update user profile
+            const updatedUser = await userService.updateUserProfile(
+                request.user.userID,
+                body
+            );
+
+            return response.success(updatedUser, 'Profile updated successfully');
+
+        } catch (error) {
+            context.log.error('Update profile error:', error.message);
+            return response.serverError('Failed to update profile', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/users/me/enrollments
+ * Get user course enrollments
+ */
+app.http('users-enrollments', {
+    methods: ['GET'],
+    route: 'users/me/enrollments',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const url = new URL(request.url);
+            const semesterCode = url.searchParams.get('semesterCode');
+
+            // Get user enrollments
+            const enrollments = await userService.getUserEnrollments(
+                request.user.userID,
+                semesterCode
+            );
+
+            return response.success(enrollments, 'Enrollments retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get enrollments error:', error.message);
+            return response.serverError('Failed to get enrollments', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/users/me/enrollments
+ * Enroll in a course
+ */
+app.http('users-enroll', {
+    methods: ['POST'],
+    route: 'users/me/enrollments',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const body = await request.json();
+
+            // Validate request body
+            const validation = validator.validateEnrollmentRequest(body);
+            if (!validation.isValid) {
+                return response.validationError(validation.errors);
+            }
+
+            // Enroll in course
+            const enrollment = await userService.enrollInCourse(
+                request.user.userID,
+                body.courseID,
+                body.enrollmentType || 'Enrolled'
+            );
+
+            return response.success(enrollment, 'Enrollment successful');
+
+        } catch (error) {
+            context.log.error('Enrollment error:', error.message);
+
+            if (error.message.includes('Course not available')) {
+                return response.badRequest('Course is not available for enrollment');
+            }
+
+            if (error.message.includes('Schedule conflict')) {
+                return response.conflict('Schedule conflict with existing enrollment');
+            }
+
+            if (error.message.includes('Enrollment full')) {
+                return response.badRequest('Course enrollment is full');
+            }
+
+            if (error.message.includes('Credit limit exceeded')) {
+                return response.badRequest('Credit limit would be exceeded');
+            }
+
+            return response.serverError('Enrollment failed', error.message);
+        }
+    }
+});
+
+/**
+ * DELETE /api/users/me/enrollments/{enrollmentId}
+ * Drop a course enrollment
+ */
+app.http('users-drop', {
+    methods: ['DELETE'],
+    route: 'users/me/enrollments/{enrollmentId}',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const enrollmentId = parseInt(context.bindingData.enrollmentId);
+
+            if (isNaN(enrollmentId)) {
+                return response.badRequest('Invalid enrollment ID');
+            }
+
+            // Drop course enrollment
+            const result = await userService.dropEnrollment(
+                request.user.userID,
+                enrollmentId
+            );
+
+            return response.success(result, 'Course dropped successfully');
+
+        } catch (error) {
+            context.log.error('Drop enrollment error:', error.message);
+
+            if (error.message.includes('Enrollment not found')) {
+                return response.notFound('Enrollment not found');
+            }
+
+            if (error.message.includes('Cannot drop')) {
+                return response.badRequest('Cannot drop this enrollment');
+            }
+
+            return response.serverError('Failed to drop enrollment', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/users/me/preferences
+ * Get user scheduling preferences
+ */
+app.http('users-preferences', {
+    methods: ['GET'],
+    route: 'users/me/preferences',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            const url = new URL(request.url);
+            const semesterCode = url.searchParams.get('semesterCode');
+
+            // Get user preferences
+            const preferences = await userService.getUserPreferences(
+                request.user.userID,
+                semesterCode
+            );
+
+            return response.success(preferences, 'Preferences retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get preferences error:', error.message);
+            return response.serverError('Failed to get preferences', error.message);
+        }
+    }
+});
+
+/**
+ * GET /api/users/me/statistics
+ * Get user academic statistics
+ */
+app.http('users-statistics', {
+    methods: ['GET'],
+    route: 'users/me/statistics',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            // Get user statistics
+            const statistics = await userService.getUserStatistics(request.user.userID);
+
+            return response.success(statistics, 'Statistics retrieved successfully');
+
+        } catch (error) {
+            context.log.error('Get statistics error:', error.message);
+            return response.serverError('Failed to get statistics', error.message);
+        }
+    }
+});
+
+/**
+ * POST /api/users/me/avatar
+ * Upload user avatar (placeholder for file upload)
+ */
+app.http('users-avatar', {
+    methods: ['POST'],
+    route: 'users/me/avatar',
+    authLevel: 'anonymous',
+    handler: authService.requireAuth(),
+    handler: async (request, context) => {
+        try {
+            // This would handle file upload in a real implementation
+            // For now, return a placeholder response
+
+            const avatarUrl = await userService.updateUserAvatar(
+                request.user.userID,
+                'placeholder-avatar-url'
+            );
+
+            return response.success(
+                { avatarUrl },
+                'Avatar uploaded successfully'
+            );
+
+        } catch (error) {
+            context.log.error('Avatar upload error:', error.message);
+            return response.serverError('Failed to upload avatar', error.message);
+        }
+    }
+});
+
+module.exports = { app };

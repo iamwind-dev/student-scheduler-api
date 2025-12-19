@@ -1,22 +1,11 @@
 const { app } = require('@azure/functions');
 const { getCoursesBySemester } = require('../../database');
 
-// Dynamic CORS origin based on environment
-const getAllowedOrigin = (request) => {
-    const origin = request.headers.get('origin') || '';
-    const allowedOrigins = [
-        'http://localhost:5173',
-        'http://localhost:3000',
-        'https://student-schedule-frontend.azurewebsites.net'
-    ];
-    return allowedOrigins.includes(origin) ? origin : 'https://student-schedule-frontend.azurewebsites.net';
-};
-
-const getCorsHeaders = (request) => ({
-    'Access-Control-Allow-Origin': getAllowedOrigin(request),
+// CORS - Allow all origins
+const getCorsHeaders = () => ({
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Credentials': 'true'
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
 });
 
 app.http('courses', {
@@ -24,7 +13,7 @@ app.http('courses', {
     authLevel: 'anonymous',
     route: 'courses',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         // Handle OPTIONS preflight
         if (request.method === 'OPTIONS') {

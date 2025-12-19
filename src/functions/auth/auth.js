@@ -23,7 +23,7 @@ app.http('auth-login', {
     route: 'auth/login',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         // Handle OPTIONS preflight
         if (request.method === 'OPTIONS') {
@@ -91,7 +91,7 @@ app.http('auth-signup', {
     route: 'auth/signup',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -140,7 +140,7 @@ app.http('auth-refresh', {
     route: 'auth/refresh',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -181,7 +181,7 @@ app.http('auth-logout', {
     route: 'auth/logout',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -215,7 +215,7 @@ app.http('auth-profile', {
     route: 'auth/profile',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -254,7 +254,7 @@ app.http('auth-validate', {
     route: 'auth/validate',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };

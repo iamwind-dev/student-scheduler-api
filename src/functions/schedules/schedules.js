@@ -8,27 +8,12 @@ const { ScheduleService } = require('../../services/schedule-service');
 
 const scheduleService = new ScheduleService();
 
-// Dynamic CORS origin based on environment
-const getAllowedOrigin = (request) => {
-    const origin = request.headers.get('origin') || '';
-    const allowedOrigins = [
-        'http://localhost:5173',
-        'http://localhost:3000',
-        'https://student-schedule-frontend.azurewebsites.net'
-    ];
-    
-    if (allowedOrigins.includes(origin)) {
-        return origin;
-    }
-    return 'https://student-schedule-frontend.azurewebsites.net';
-};
-
-const getCorsHeaders = (request) => ({
+// CORS - Allow all origins
+const getCorsHeaders = () => ({
     'Content-Type': 'application/json',
-    'Access-Control-Allow-Origin': getAllowedOrigin(request),
+    'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-    'Access-Control-Allow-Credentials': 'true'
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
 });
 
 // Simple response helpers
@@ -50,7 +35,7 @@ app.http('schedules-create', {
     route: 'schedules',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -101,7 +86,7 @@ app.http('schedules-get-by-user', {
     route: 'schedules/user/{userId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -146,7 +131,7 @@ app.http('schedules-get-details', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -190,7 +175,7 @@ app.http('schedules-update', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };
@@ -236,7 +221,7 @@ app.http('schedules-delete', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
-        const corsHeaders = getCorsHeaders(request);
+        const corsHeaders = getCorsHeaders();
         
         if (request.method === 'OPTIONS') {
             return { status: 200, headers: corsHeaders };

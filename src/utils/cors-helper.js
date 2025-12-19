@@ -1,53 +1,20 @@
 /**
  * CORS HELPER
- * Dynamic CORS origin based on environment
+ * Allow all origins for cross-device access
  */
-
-const ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'http://localhost:3000',
-    'http://127.0.0.1:5173',
-    'https://student-schedule-frontend.azurewebsites.net',
-    '*'  // Allow all origins for development
-];
-
-/**
- * Get allowed origin from request
- * @param {Request} request - The HTTP request object
- * @returns {string} - The allowed origin
- */
-function getAllowedOrigin(request) {
-    const origin = request.headers.get('origin') || '';
-    
-    // Allow all origins for development
-    if (ALLOWED_ORIGINS.includes('*')) {
-        return origin || '*';
-    }
-    
-    if (ALLOWED_ORIGINS.includes(origin)) {
-        return origin;
-    }
-    
-    // Default to production frontend if origin not in list
-    return 'https://student-schedule-frontend.azurewebsites.net';
-}
 
 /**
  * Get CORS headers for response
- * @param {Request} request - The HTTP request object
  * @returns {Object} - CORS headers object
  */
-function getCorsHeaders(request) {
+function getCorsHeaders() {
     return {
-        'Access-Control-Allow-Origin': getAllowedOrigin(request),
+        'Access-Control-Allow-Origin': '*',
         'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-        'Access-Control-Allow-Credentials': 'true'
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization'
     };
 }
 
 module.exports = {
-    getAllowedOrigin,
-    getCorsHeaders,
-    ALLOWED_ORIGINS
+    getCorsHeaders
 };

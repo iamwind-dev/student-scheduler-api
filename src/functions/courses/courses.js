@@ -22,6 +22,7 @@ const getCorsHeaders = (request) => ({
 app.http('courses', {
     methods: ['GET', 'OPTIONS'],
     authLevel: 'anonymous',
+    route: 'courses',
     handler: async (request, context) => {
         const corsHeaders = getCorsHeaders(request);
         

@@ -74,9 +74,11 @@ async function connectWithRetry() {
     let lastError;
     let delay = retryConfig.initialDelayMs;
 
+    console.log(`📊 [database.js] Connecting to database: ${config.database} on ${config.server}`);
+
     for (let attempt = 1; attempt <= retryConfig.maxRetries; attempt++) {
         try {
-            console.log(`🔄 [database.js] Connection attempt ${attempt}/${retryConfig.maxRetries}...`);
+            console.log(`🔄 [database.js] Connection attempt ${attempt}/${retryConfig.maxRetries} to ${config.database}...`);
             
             const pool = await sql.connect(config);
             

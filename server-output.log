@@ -1,0 +1,55 @@
+
+🚀 API Server running at http://localhost:7071
+📖 Swagger UI: http://localhost:7071/api-docs
+📚 Courses endpoint: http://localhost:7071/api/courses
+📅 Schedules endpoint: http://localhost:7071/api/schedules
+❤️  Health check: http://localhost:7071/api/health
+
+🔌 Connecting to Azure SQL Databases...
+✅ Connected to Courses Database (student-scheduler-db)
+✅ Connected to Users Database (user-db)
+✅ Both databases connected successfully
+
+[API] Error saving schedule: RequestError: Cannot insert the value NULL into column 'UserId', table 'user-db.dbo.Schedules'; column does not allow nulls. INSERT fails.
+    at handleError (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/mssql/lib/tedious/request.js:384:15)
+    at Connection.emit (node:events:517:28)
+    at Connection.emit (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/connection.js:970:18)
+    at RequestTokenHandler.onErrorMessage (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/token/handler.js:284:21)
+    at Readable.<anonymous> (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/token/token-stream-parser.js:19:33)
+    at Readable.emit (node:events:517:28)
+    at addChunk (node:internal/streams/readable:368:12)
+    at readableAddChunk (node:internal/streams/readable:341:9)
+    at Readable.push (node:internal/streams/readable:278:10)
+    at next (node:internal/streams/from:98:31) {
+  code: 'EREQUEST',
+  originalError: Error: Cannot insert the value NULL into column 'UserId', table 'user-db.dbo.Schedules'; column does not allow nulls. INSERT fails.
+      at handleError (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/mssql/lib/tedious/request.js:382:19)
+      at Connection.emit (node:events:517:28)
+      at Connection.emit (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/connection.js:970:18)
+      at RequestTokenHandler.onErrorMessage (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/token/handler.js:284:21)
+      at Readable.<anonymous> (/home/phanhoailang/LangPhan/Azure/final_project/student-scheduler-api/node_modules/tedious/lib/token/token-stream-parser.js:19:33)
+      at Readable.emit (node:events:517:28)
+      at addChunk (node:internal/streams/readable:368:12)
+      at readableAddChunk (node:internal/streams/readable:341:9)
+      at Readable.push (node:internal/streams/readable:278:10)
+      at next (node:internal/streams/from:98:31) {
+    info: ErrorMessageToken {
+      name: 'ERROR',
+      handlerName: 'onErrorMessage',
+      number: 515,
+      state: 2,
+      class: 16,
+      message: "Cannot insert the value NULL into column 'UserId', table 'user-db.dbo.Schedules'; column does not allow nulls. INSERT fails.",
+      serverName: 'student-schedule',
+      procName: '',
+      lineNumber: 2
+    }
+  },
+  number: 515,
+  lineNumber: 2,
+  state: 2,
+  class: 16,
+  serverName: 'student-schedule',
+  procName: '',
+  precedingErrors: []
+}

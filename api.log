@@ -1,0 +1,26 @@
+
+🚀 API Server running at http://localhost:7071
+📖 Swagger UI: http://localhost:7071/api-docs
+📚 Courses endpoint: http://localhost:7071/api/courses
+📅 Schedules endpoint: http://localhost:7071/api/schedules
+❤️  Health check: http://localhost:7071/api/health
+
+🔌 Connecting to Azure SQL Databases...
+🔄 [Courses DB] Connection attempt 1/5...
+✅ [Courses DB] Connected successfully on attempt 1
+🔄 [Users DB] Connection attempt 1/5...
+✅ [Users DB] Connected successfully on attempt 1
+✅ Both databases connected successfully
+
+[API] User logged in: langph.22it@vku.udn.vn
+[API] User logged in: langph.22it@vku.udn.vn
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Creating schedule for user: langph.22it@vku.udn.vn
+[ScheduleService] Connection attempt 1/5 to user-db...
+[ScheduleService] ✅ Connected to user-db
+[createSchedule] Getting UserId for email: langph.22it@vku.udn.vn
+[createSchedule] Found existing user ID: 3
+[API] Schedule created successfully: 35

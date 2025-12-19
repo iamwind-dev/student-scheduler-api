@@ -1,0 +1,13 @@
+
+🚀 API Server running at http://localhost:7071
+📖 Swagger UI: http://localhost:7071/api-docs
+📚 Courses endpoint: http://localhost:7071/api/courses
+📅 Schedules endpoint: http://localhost:7071/api/schedules
+❤️  Health check: http://localhost:7071/api/health
+
+🔌 Connecting to Azure SQL Databases...
+✅ Connected to Courses Database (student-scheduler-db)
+[API] Getting schedule details: 24
+✅ Connected to Users Database (user-db)
+✅ Both databases connected successfully
+

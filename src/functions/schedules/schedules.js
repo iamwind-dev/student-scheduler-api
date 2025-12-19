@@ -10,6 +10,29 @@ const { ResponseHelper } = require('../../utils/response-helper');
 const scheduleService = new ScheduleService();
 const response = new ResponseHelper();
 
+// Dynamic CORS origin based on environment
+const getAllowedOrigin = (request) => {
+    const origin = request.headers.get('origin') || '';
+    const allowedOrigins = [
+        'http://localhost:5173',
+        'http://localhost:3000',
+        'https://student-schedule-frontend.azurewebsites.net'
+    ];
+    
+    if (allowedOrigins.includes(origin)) {
+        return origin;
+    }
+    // Default to production frontend if origin not in list
+    return 'https://student-schedule-frontend.azurewebsites.net';
+};
+
+const getCorsHeaders = (request) => ({
+    'Access-Control-Allow-Origin': getAllowedOrigin(request),
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Credentials': 'true'
+});
+
 /**
  * POST /api/schedules
  * Create new schedule for user
@@ -19,29 +42,22 @@ app.http('schedules-create', {
     route: 'schedules',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
             const body = await request.json();
             const { userId, scheduleName, courses, user } = body;
 
+            context.log('[schedules-create] Request:', { userId, scheduleName, courseCount: courses?.length });
+
             if (!userId || !courses || !Array.isArray(courses) || courses.length === 0) {
                 return {
                     ...response.validationError(['userId and courses array are required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
+                    headers: corsHeaders
                 };
             }
 
@@ -49,22 +65,18 @@ app.http('schedules-create', {
             const userData = user || { email: userId };
             const result = await scheduleService.createSchedule(userId, scheduleName, courses, userData);
 
+            context.log('[schedules-create] Success:', result);
+
             return {
                 ...response.success(result, 'Schedule created successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
-            context.log.error('Create schedule error:', error);
+            context.log.error('[schedules-create] Error:', error);
             return {
                 ...response.serverError('Failed to create schedule', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
         }
     }
@@ -79,16 +91,10 @@ app.http('schedules-get-by-user', {
     route: 'schedules/user/{userId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'GET, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -97,10 +103,7 @@ app.http('schedules-get-by-user', {
             if (!userId) {
                 return {
                     ...response.validationError(['userId is required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
+                    headers: corsHeaders
                 };
             }
 
@@ -109,20 +112,14 @@ app.http('schedules-get-by-user', {
 
             return {
                 ...response.success(result, 'Schedules retrieved successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Get user schedules error:', error);
             return {
                 ...response.serverError('Failed to get schedules', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
         }
     }
@@ -137,16 +134,10 @@ app.http('schedules-get-details', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'GET, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -155,10 +146,7 @@ app.http('schedules-get-details', {
             if (!scheduleId) {
                 return {
                     ...response.validationError(['scheduleId is required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
+                    headers: corsHeaders
                 };
             }
 
@@ -166,20 +154,14 @@ app.http('schedules-get-details', {
 
             return {
                 ...response.success(result, 'Schedule details retrieved successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Get schedule details error:', error);
             return {
                 ...response.serverError('Failed to get schedule details', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
         }
     }
@@ -194,16 +176,10 @@ app.http('schedules-update', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'PUT, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -214,10 +190,7 @@ app.http('schedules-update', {
             if (!scheduleId || !courses || !Array.isArray(courses)) {
                 return {
                     ...response.validationError(['scheduleId and courses array are required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
+                    headers: corsHeaders
                 };
             }
 
@@ -225,20 +198,14 @@ app.http('schedules-update', {
 
             return {
                 ...response.success(result, 'Schedule updated successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Update schedule error:', error);
             return {
                 ...response.serverError('Failed to update schedule', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
         }
     }
@@ -253,16 +220,10 @@ app.http('schedules-delete', {
     route: 'schedules/{scheduleId}',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'DELETE, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -271,10 +232,7 @@ app.http('schedules-delete', {
             if (!scheduleId) {
                 return {
                     ...response.validationError(['scheduleId is required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
+                    headers: corsHeaders
                 };
             }
 
@@ -282,20 +240,14 @@ app.http('schedules-delete', {
 
             return {
                 ...response.success(result, 'Schedule deleted successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Delete schedule error:', error);
             return {
                 ...response.serverError('Failed to delete schedule', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
         }
     }

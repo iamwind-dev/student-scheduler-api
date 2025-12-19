@@ -7,6 +7,7 @@ const { app } = require('@azure/functions');
 const { AuthenticationService } = require('../../services/auth-service');
 const { ResponseHelper } = require('../../utils/response-helper');
 const { ValidationHelper } = require('../../utils/validation-helper');
+const { getCorsHeaders } = require('../../utils/cors-helper');
 
 // Initialize services
 const authService = new AuthenticationService();
@@ -22,17 +23,11 @@ app.http('auth-login', {
     route: 'auth/login',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         // Handle OPTIONS preflight
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -43,7 +38,7 @@ app.http('auth-login', {
                 // Microsoft login
                 const validation = validator.validateLoginRequest(body);
                 if (!validation.isValid) {
-                    return response.validationError(validation.errors);
+                    return { ...response.validationError(validation.errors), headers: corsHeaders };
                 }
 
                 const result = await authService.authenticateWithMicrosoft(
@@ -51,25 +46,13 @@ app.http('auth-login', {
                     body.tokenType
                 );
 
-                return {
-                    ...response.success(result, 'Login successful'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.success(result, 'Login successful'), headers: corsHeaders };
             } else {
                 // Email/Password login
                 const { email, password } = body;
 
                 if (!email || !password) {
-                    return {
-                        ...response.validationError(['Email and password are required']),
-                        headers: {
-                            'Access-Control-Allow-Origin': 'http://localhost:5173',
-                            'Access-Control-Allow-Credentials': 'true'
-                        }
-                    };
+                    return { ...response.validationError(['Email and password are required']), headers: corsHeaders };
                 }
 
                 // Authenticate with email/password (mock for now)
@@ -84,35 +67,17 @@ app.http('auth-login', {
                     sessionToken: 'mock-session-' + Date.now()
                 };
 
-                return {
-                    ...response.success(result, 'Login successful'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.success(result, 'Login successful'), headers: corsHeaders };
             }
 
         } catch (error) {
             context.log.error('Login error:', error.message);
 
             if (error.message.includes('Invalid Microsoft token')) {
-                return {
-                    ...response.unauthorized('Invalid authentication token'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Invalid authentication token'), headers: corsHeaders };
             }
 
-            return {
-                ...response.serverError('Authentication failed', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Authentication failed', error.message), headers: corsHeaders };
         }
     }
 });
@@ -126,16 +91,10 @@ app.http('auth-signup', {
     route: 'auth/signup',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
@@ -143,13 +102,7 @@ app.http('auth-signup', {
             const { name, email, studentId, password } = body;
 
             if (!name || !email || !password) {
-                return {
-                    ...response.validationError(['Name, email, and password are required']),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.validationError(['Name, email, and password are required']), headers: corsHeaders };
             }
 
             // Create new user (mock for now)
@@ -168,21 +121,12 @@ app.http('auth-signup', {
                     data: newUser,
                     message: 'User registered successfully'
                 }, 'Signup successful'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Signup error:', error.message);
-            return {
-                ...response.serverError('Signup failed', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Signup failed', error.message), headers: corsHeaders };
         }
     }
 });
@@ -196,41 +140,23 @@ app.http('auth-refresh', {
     route: 'auth/refresh',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
             const authHeader = request.headers.get('authorization');
 
             if (!authHeader || !authHeader.startsWith('Bearer ')) {
-                return {
-                    ...response.unauthorized('Refresh token required'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Refresh token required'), headers: corsHeaders };
             }
 
             const refreshToken = authHeader.substring(7);
             const result = await authService.refreshToken(refreshToken);
 
-            return {
-                ...response.success(result, 'Token refreshed successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.success(result, 'Token refreshed successfully'), headers: corsHeaders };
 
         } catch (error) {
             context.log.error('Token refresh error:', error.message);
@@ -238,22 +164,10 @@ app.http('auth-refresh', {
             if (error.message.includes('Invalid refresh token') ||
                 error.message.includes('not found') ||
                 error.message.includes('revoked')) {
-                return {
-                    ...response.unauthorized('Invalid or expired refresh token'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Invalid or expired refresh token'), headers: corsHeaders };
             }
 
-            return {
-                ...response.serverError('Token refresh failed', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Token refresh failed', error.message), headers: corsHeaders };
         }
     }
 });
@@ -267,51 +181,27 @@ app.http('auth-logout', {
     route: 'auth/logout',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
             const authHeader = request.headers.get('authorization');
 
             if (!authHeader || !authHeader.startsWith('Bearer ')) {
-                return {
-                    ...response.unauthorized('Session token required'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Session token required'), headers: corsHeaders };
             }
 
             const sessionToken = authHeader.substring(7);
             const result = await authService.logout(sessionToken);
 
-            return {
-                ...response.success(result, 'Logout successful'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.success(result, 'Logout successful'), headers: corsHeaders };
 
         } catch (error) {
             context.log.error('Logout error:', error.message);
-            return {
-                ...response.serverError('Logout failed', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Logout failed', error.message), headers: corsHeaders };
         }
     }
 });
@@ -325,62 +215,32 @@ app.http('auth-profile', {
     route: 'auth/profile',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'GET, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
             const authHeader = request.headers.get('authorization');
 
             if (!authHeader || !authHeader.startsWith('Bearer ')) {
-                return {
-                    ...response.unauthorized('Session token required'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Session token required'), headers: corsHeaders };
             }
 
             const sessionToken = authHeader.substring(7);
             const userProfile = await authService.getUserProfile(sessionToken);
 
-            return {
-                ...response.success(userProfile, 'Profile retrieved successfully'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.success(userProfile, 'Profile retrieved successfully'), headers: corsHeaders };
 
         } catch (error) {
             context.log.error('Get profile error:', error.message);
 
             if (error.message.includes('Invalid session token')) {
-                return {
-                    ...response.unauthorized('Invalid or expired session token'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Invalid or expired session token'), headers: corsHeaders };
             }
 
-            return {
-                ...response.serverError('Failed to get profile', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Failed to get profile', error.message), headers: corsHeaders };
         }
     }
 });
@@ -394,42 +254,24 @@ app.http('auth-validate', {
     route: 'auth/validate',
     authLevel: 'anonymous',
     handler: async (request, context) => {
+        const corsHeaders = getCorsHeaders(request);
+        
         if (request.method === 'OPTIONS') {
-            return {
-                status: 200,
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Methods': 'GET, OPTIONS',
-                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { status: 200, headers: corsHeaders };
         }
 
         try {
             const authHeader = request.headers.get('authorization');
 
             if (!authHeader || !authHeader.startsWith('Bearer ')) {
-                return {
-                    ...response.unauthorized('Session token required'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Session token required'), headers: corsHeaders };
             }
 
             const sessionToken = authHeader.substring(7);
             const validation = await authService.validateSessionToken(sessionToken);
 
             if (!validation) {
-                return {
-                    ...response.unauthorized('Invalid or expired session token'),
-                    headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
-                        'Access-Control-Allow-Credentials': 'true'
-                    }
-                };
+                return { ...response.unauthorized('Invalid or expired session token'), headers: corsHeaders };
             }
 
             return {
@@ -438,21 +280,12 @@ app.http('auth-validate', {
                     user: validation.user,
                     expiresAt: validation.session.expiresAt
                 }, 'Token is valid'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
+                headers: corsHeaders
             };
 
         } catch (error) {
             context.log.error('Token validation error:', error.message);
-            return {
-                ...response.serverError('Token validation failed', error.message),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
-                }
-            };
+            return { ...response.serverError('Token validation failed', error.message), headers: corsHeaders };
         }
     }
 });

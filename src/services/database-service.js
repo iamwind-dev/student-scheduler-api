@@ -10,6 +10,18 @@ class DatabaseService {
     constructor() {
         this.logger = new SystemLogger();
         this.pool = null;
+        this.isConnecting = false;
+        this.lastConnectionAttempt = null;
+        
+        // Azure SQL Free tier auto-pause settings
+        this.retryConfig = {
+            maxRetries: 5,                    // Maximum retry attempts
+            initialDelayMs: 2000,             // Initial delay between retries (2 seconds)
+            maxDelayMs: 30000,                // Maximum delay (30 seconds)
+            backoffMultiplier: 2,             // Exponential backoff multiplier
+            wakeUpTimeoutMs: 120000           // Max time to wait for Azure SQL to wake up (2 minutes)
+        };
+
         this.config = {
             server: process.env.SQL_SERVER || 'student-scheduler-server.database.windows.net',
             database: process.env.SQL_DATABASE || 'student-scheduler-db',
@@ -20,15 +32,15 @@ class DatabaseService {
                 encrypt: true,
                 trustServerCertificate: false,
                 enableArithAbort: true,
-                requestTimeout: 30000,
-                connectionTimeout: 30000
+                requestTimeout: 60000,        // Increased for Azure wake-up
+                connectionTimeout: 60000      // Increased for Azure wake-up
             },
             pool: {
                 max: 10,
                 min: 0,
                 idleTimeoutMillis: 30000,
-                acquireTimeoutMillis: 60000,
-                createTimeoutMillis: 30000,
+                acquireTimeoutMillis: 120000, // Increased for Azure wake-up
+                createTimeoutMillis: 60000,   // Increased for Azure wake-up
                 destroyTimeoutMillis: 5000,
                 reapIntervalMillis: 1000,
                 createRetryIntervalMillis: 200
@@ -37,50 +49,165 @@ class DatabaseService {
     }
 
     /**
-     * Initialize database connection pool
+     * Sleep helper function
+     */
+    sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+
+    /**
+     * Check if error is related to Azure SQL paused/sleeping state
+     */
+    isAzurePausedError(error) {
+        const pausedErrorPatterns = [
+            'ECONNREFUSED',
+            'ETIMEDOUT',
+            'ESOCKET',
+            'ENOTOPEN',
+            'Connection lost',
+            'connection is closed',
+            'Database .* on server .* is not currently available',
+            'Cannot open server',
+            'Login failed',
+            'Server is not found or not accessible',
+            'TCP Provider',
+            'network-related',
+            'instance-specific error'
+        ];
+
+        const errorMessage = error.message || error.toString();
+        const errorCode = error.code || '';
+
+        return pausedErrorPatterns.some(pattern => 
+            errorMessage.toLowerCase().includes(pattern.toLowerCase()) ||
+            errorCode.includes(pattern)
+        );
+    }
+
+    /**
+     * Initialize database connection pool with retry for Azure SQL wake-up
      */
     async initialize() {
-        try {
+        if (this.isConnecting) {
+            // Wait for ongoing connection attempt
+            while (this.isConnecting) {
+                await this.sleep(500);
+            }
             if (this.pool) {
                 return this.pool;
             }
+        }
 
-            this.pool = await new sql.ConnectionPool(this.config).connect();
+        if (this.pool) {
+            return this.pool;
+        }
+
+        this.isConnecting = true;
+
+        try {
+            this.pool = await this.connectWithRetry();
 
             await this.logger.logSystemEvent('DATABASE_CONNECTED', {
                 server: this.config.server,
                 database: this.config.database
             });
 
-            // Handle pool events
+            // Handle pool events - auto reconnect on error
             this.pool.on('error', async (err) => {
                 await this.logger.logError('DATABASE_POOL_ERROR', err.message);
+                // Reset pool on error to force reconnection on next request
+                this.pool = null;
             });
 
             return this.pool;
 
         } catch (error) {
+            this.pool = null;
             await this.logger.logError('DATABASE_CONNECTION_FAILED', error.message);
             throw error;
+        } finally {
+            this.isConnecting = false;
         }
     }
 
     /**
-     * Get database connection
+     * Connect to database with exponential backoff retry
+     * Handles Azure SQL Free tier auto-pause wake-up
+     */
+    async connectWithRetry() {
+        let lastError;
+        let delay = this.retryConfig.initialDelayMs;
+
+        for (let attempt = 1; attempt <= this.retryConfig.maxRetries; attempt++) {
+            try {
+                console.log(`🔄 Database connection attempt ${attempt}/${this.retryConfig.maxRetries}...`);
+
+                const pool = await new sql.ConnectionPool(this.config).connect();
+                
+                console.log(`✅ Database connected successfully on attempt ${attempt}`);
+                return pool;
+
+            } catch (error) {
+                lastError = error;
+                console.log(`❌ Connection attempt ${attempt} failed: ${error.message}`);
+
+                // Check if this is a paused database error
+                if (this.isAzurePausedError(error) && attempt < this.retryConfig.maxRetries) {
+                    console.log(`⏳ Azure SQL might be paused. Waiting ${delay/1000}s before retry...`);
+                    console.log(`   (Azure SQL Free tier auto-pauses after 1 hour of inactivity)`);
+                    
+                    await this.sleep(delay);
+                    
+                    // Exponential backoff
+                    delay = Math.min(delay * this.retryConfig.backoffMultiplier, this.retryConfig.maxDelayMs);
+                } else if (attempt < this.retryConfig.maxRetries) {
+                    // For other errors, still retry but with shorter delay
+                    await this.sleep(this.retryConfig.initialDelayMs);
+                }
+            }
+        }
+
+        throw new Error(`Failed to connect to database after ${this.retryConfig.maxRetries} attempts. Last error: ${lastError.message}`);
+    }
+
+    /**
+     * Close and reset the connection pool
+     */
+    async closePool() {
+        if (this.pool) {
+            try {
+                await this.pool.close();
+                console.log('Database pool closed');
+            } catch (error) {
+                console.error('Error closing pool:', error.message);
+            }
+            this.pool = null;
+        }
+    }
+
+    /**
+     * Get database connection with auto-reconnect
      */
     async getConnection() {
-        if (!this.pool) {
-            await this.initialize();
+        // Check if pool exists and is connected
+        if (this.pool && this.pool.connected) {
+            return this.pool;
         }
 
-        return this.pool;
+        // Reset pool if it exists but is not connected
+        if (this.pool && !this.pool.connected) {
+            console.log('🔄 Pool exists but not connected, resetting...');
+            this.pool = null;
+        }
+
+        return await this.initialize();
     }
 
     /**
-     * Execute query with error handling and logging
+     * Execute query with error handling, logging, and auto-reconnect
      */
     async executeQuery(query, params = {}, operation = 'QUERY') {
-        try {
+        return await this.executeWithRetry(async () => {
             const pool = await this.getConnection();
             const request = pool.request();
 
@@ -103,14 +230,52 @@ class DatabaseService {
             }
 
             return result;
+        }, operation);
+    }
 
-        } catch (error) {
-            await this.logger.logError('DATABASE_QUERY_FAILED', error.message, {
-                query: query.substring(0, 100),
-                operation
-            });
-            throw error;
+    /**
+     * Execute operation with auto-retry on connection errors
+     */
+    async executeWithRetry(operation, operationName = 'OPERATION') {
+        let lastError;
+        let delay = this.retryConfig.initialDelayMs;
+
+        for (let attempt = 1; attempt <= this.retryConfig.maxRetries; attempt++) {
+            try {
+                return await operation();
+
+            } catch (error) {
+                lastError = error;
+
+                // Check if error is connection-related
+                if (this.isAzurePausedError(error)) {
+                    console.log(`⚠️ ${operationName} failed on attempt ${attempt}: ${error.message}`);
+                    
+                    // Reset pool to force reconnection
+                    await this.closePool();
+
+                    if (attempt < this.retryConfig.maxRetries) {
+                        console.log(`⏳ Retrying in ${delay/1000}s... (Azure SQL might be waking up)`);
+                        await this.sleep(delay);
+                        delay = Math.min(delay * this.retryConfig.backoffMultiplier, this.retryConfig.maxDelayMs);
+                    }
+                } else {
+                    // For non-connection errors, don't retry
+                    await this.logger.logError('DATABASE_QUERY_FAILED', error.message, {
+                        query: operationName,
+                        attempt
+                    });
+                    throw error;
+                }
+            }
         }
+
+        await this.logger.logError('DATABASE_OPERATION_FAILED_ALL_RETRIES', lastError.message, {
+            operation: operationName,
+            attempts: this.retryConfig.maxRetries
+        });
+        
+        throw new Error(`Database operation failed after ${this.retryConfig.maxRetries} attempts: ${lastError.message}`);
     }
 
     // =====================================

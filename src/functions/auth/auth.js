@@ -15,7 +15,7 @@ const validator = new ValidationHelper();
 
 /**
  * POST /api/auth/login
- * Microsoft Entra ID authentication
+ * Email/Password OR Microsoft Entra ID authentication
  */
 app.http('auth-login', {
     methods: ['POST', 'OPTIONS'],
@@ -38,25 +38,60 @@ app.http('auth-login', {
         try {
             const body = await request.json();
 
-            // Validate request body
-            const validation = validator.validateLoginRequest(body);
-            if (!validation.isValid) {
-                return response.validationError(validation.errors);
-            }
-
-            // Authenticate with Microsoft
-            const result = await authService.authenticateWithMicrosoft(
-                body.accessToken,
-                body.tokenType
-            );
-
-            return {
-                ...response.success(result, 'Login successful'),
-                headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
-                    'Access-Control-Allow-Credentials': 'true'
+            // Check if it's Microsoft login or email/password login
+            if (body.accessToken) {
+                // Microsoft login
+                const validation = validator.validateLoginRequest(body);
+                if (!validation.isValid) {
+                    return response.validationError(validation.errors);
                 }
-            };
+
+                const result = await authService.authenticateWithMicrosoft(
+                    body.accessToken,
+                    body.tokenType
+                );
+
+                return {
+                    ...response.success(result, 'Login successful'),
+                    headers: {
+                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Access-Control-Allow-Credentials': 'true'
+                    }
+                };
+            } else {
+                // Email/Password login
+                const { email, password } = body;
+
+                if (!email || !password) {
+                    return {
+                        ...response.validationError(['Email and password are required']),
+                        headers: {
+                            'Access-Control-Allow-Origin': 'http://localhost:5173',
+                            'Access-Control-Allow-Credentials': 'true'
+                        }
+                    };
+                }
+
+                // Authenticate with email/password (mock for now)
+                const result = {
+                    user: {
+                        id: '12345',
+                        email: email,
+                        name: email.split('@')[0],
+                        studentId: 'STU001',
+                        role: 'Student'
+                    },
+                    sessionToken: 'mock-session-' + Date.now()
+                };
+
+                return {
+                    ...response.success(result, 'Login successful'),
+                    headers: {
+                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Access-Control-Allow-Credentials': 'true'
+                    }
+                };
+            }
 
         } catch (error) {
             context.log.error('Login error:', error.message);
@@ -73,6 +108,76 @@ app.http('auth-login', {
 
             return {
                 ...response.serverError('Authentication failed', error.message),
+                headers: {
+                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Credentials': 'true'
+                }
+            };
+        }
+    }
+});
+
+/**
+ * POST /api/auth/signup
+ * Register new user with email/password
+ */
+app.http('auth-signup', {
+    methods: ['POST', 'OPTIONS'],
+    route: 'auth/signup',
+    authLevel: 'anonymous',
+    handler: async (request, context) => {
+        if (request.method === 'OPTIONS') {
+            return {
+                status: 200,
+                headers: {
+                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Methods': 'POST, OPTIONS',
+                    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+                    'Access-Control-Allow-Credentials': 'true'
+                }
+            };
+        }
+
+        try {
+            const body = await request.json();
+            const { name, email, studentId, password } = body;
+
+            if (!name || !email || !password) {
+                return {
+                    ...response.validationError(['Name, email, and password are required']),
+                    headers: {
+                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Access-Control-Allow-Credentials': 'true'
+                    }
+                };
+            }
+
+            // Create new user (mock for now)
+            const newUser = {
+                id: 'user-' + Date.now(),
+                name,
+                email,
+                studentId: studentId || null,
+                role: 'Student',
+                createdAt: new Date().toISOString()
+            };
+
+            return {
+                ...response.success({
+                    success: true,
+                    data: newUser,
+                    message: 'User registered successfully'
+                }, 'Signup successful'),
+                headers: {
+                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Credentials': 'true'
+                }
+            };
+
+        } catch (error) {
+            context.log.error('Signup error:', error.message);
+            return {
+                ...response.serverError('Signup failed', error.message),
                 headers: {
                     'Access-Control-Allow-Origin': 'http://localhost:5173',
                     'Access-Control-Allow-Credentials': 'true'

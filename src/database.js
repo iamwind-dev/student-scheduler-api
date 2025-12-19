@@ -3,6 +3,7 @@ const sql = require('mssql');
 /**
  * Database Service Layer
  * Handles all SQL Server connections and queries
+ * With auto-reconnect support for Azure SQL Free tier (auto-pause)
  */
 
 const config = {
@@ -13,28 +14,158 @@ const config = {
     options: {
         encrypt: true,
         enableArithAbort: true,
-        trustServerCertificate: false
+        trustServerCertificate: false,
+        requestTimeout: 60000,        // Increased for Azure wake-up
+        connectionTimeout: 60000      // Increased for Azure wake-up
     },
     pool: {
         max: 10,
         min: 0,
-        idleTimeoutMillis: 30000
+        idleTimeoutMillis: 30000,
+        acquireTimeoutMillis: 120000  // Increased for Azure wake-up
     }
 };
 
-let poolPromise;
+// Retry configuration for Azure SQL Free tier
+const retryConfig = {
+    maxRetries: 5,
+    initialDelayMs: 2000,
+    maxDelayMs: 30000,
+    backoffMultiplier: 2
+};
 
-// Initialize connection pool
-function getPool() {
-    if (!poolPromise) {
-        poolPromise = sql.connect(config);
+let poolPromise = null;
+let isConnecting = false;
 
-        poolPromise.catch(error => {
-            console.error('Database connection failed:', error);
-            poolPromise = null;
-        });
+// Sleep helper
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Check if error is related to Azure SQL paused state
+function isAzurePausedError(error) {
+    const pausedErrorPatterns = [
+        'ECONNREFUSED',
+        'ETIMEDOUT',
+        'ESOCKET',
+        'ENOTOPEN',
+        'Connection lost',
+        'connection is closed',
+        'Database .* on server .* is not currently available',
+        'Cannot open server',
+        'Login failed',
+        'Server is not found or not accessible',
+        'TCP Provider',
+        'network-related',
+        'instance-specific error'
+    ];
+
+    const errorMessage = error.message || error.toString();
+    const errorCode = error.code || '';
+
+    return pausedErrorPatterns.some(pattern => 
+        errorMessage.toLowerCase().includes(pattern.toLowerCase()) ||
+        errorCode.includes(pattern)
+    );
+}
+
+// Connect with retry for Azure SQL wake-up
+async function connectWithRetry() {
+    let lastError;
+    let delay = retryConfig.initialDelayMs;
+
+    for (let attempt = 1; attempt <= retryConfig.maxRetries; attempt++) {
+        try {
+            console.log(`🔄 [database.js] Connection attempt ${attempt}/${retryConfig.maxRetries}...`);
+            
+            const pool = await sql.connect(config);
+            
+            console.log(`✅ [database.js] Connected successfully on attempt ${attempt}`);
+            return pool;
+
+        } catch (error) {
+            lastError = error;
+            console.log(`❌ [database.js] Attempt ${attempt} failed: ${error.message}`);
+
+            if (isAzurePausedError(error) && attempt < retryConfig.maxRetries) {
+                console.log(`⏳ [database.js] Azure SQL might be paused. Waiting ${delay/1000}s...`);
+                await sleep(delay);
+                delay = Math.min(delay * retryConfig.backoffMultiplier, retryConfig.maxDelayMs);
+            } else if (attempt < retryConfig.maxRetries) {
+                await sleep(retryConfig.initialDelayMs);
+            }
+        }
     }
+
+    throw new Error(`Failed to connect after ${retryConfig.maxRetries} attempts: ${lastError.message}`);
+}
+
+// Initialize connection pool with retry
+async function getPool() {
+    // If already connecting, wait
+    if (isConnecting) {
+        while (isConnecting) {
+            await sleep(500);
+        }
+        if (poolPromise) {
+            return poolPromise;
+        }
+    }
+
+    if (!poolPromise) {
+        isConnecting = true;
+        
+        try {
+            poolPromise = await connectWithRetry();
+
+            // Handle pool errors - reset to force reconnection
+            poolPromise.on('error', (err) => {
+                console.error('❌ [database.js] Pool error:', err.message);
+                poolPromise = null;
+            });
+
+        } catch (error) {
+            console.error('❌ [database.js] Connection failed:', error.message);
+            poolPromise = null;
+            throw error;
+        } finally {
+            isConnecting = false;
+        }
+    }
+    
     return poolPromise;
+}
+
+// Execute query with auto-retry on connection errors
+async function executeWithRetry(operation) {
+    let lastError;
+    let delay = retryConfig.initialDelayMs;
+
+    for (let attempt = 1; attempt <= retryConfig.maxRetries; attempt++) {
+        try {
+            return await operation();
+
+        } catch (error) {
+            lastError = error;
+
+            if (isAzurePausedError(error)) {
+                console.log(`⚠️ [database.js] Query failed (attempt ${attempt}): ${error.message}`);
+                
+                // Reset pool to force reconnection
+                poolPromise = null;
+
+                if (attempt < retryConfig.maxRetries) {
+                    console.log(`⏳ [database.js] Retrying in ${delay/1000}s...`);
+                    await sleep(delay);
+                    delay = Math.min(delay * retryConfig.backoffMultiplier, retryConfig.maxDelayMs);
+                }
+            } else {
+                throw error;
+            }
+        }
+    }
+
+    throw new Error(`Operation failed after ${retryConfig.maxRetries} attempts: ${lastError.message}`);
 }
 
 // =====================================
@@ -45,7 +176,7 @@ function getPool() {
  * Get all courses for a specific semester
  */
 async function getCoursesBySemester(semesterCode = '2025A') {
-    try {
+    return executeWithRetry(async () => {
         const pool = await getPool();
 
         const result = await pool.request()
@@ -65,18 +196,14 @@ async function getCoursesBySemester(semesterCode = '2025A') {
             `);
 
         return result.recordset;
-
-    } catch (error) {
-        console.error('Error getting courses:', error);
-        throw new Error(`Database error: ${error.message}`);
-    }
+    });
 }
 
 /**
  * Get course by ID
  */
 async function getCourseById(courseId) {
-    try {
+    return executeWithRetry(async () => {
         const pool = await getPool();
 
         const result = await pool.request()
@@ -100,11 +227,7 @@ async function getCourseById(courseId) {
             `);
 
         return result.recordset[0];
-
-    } catch (error) {
-        console.error('Error getting course by ID:', error);
-        throw new Error(`Database error: ${error.message}`);
-    }
+    });
 }
 
 // =====================================
@@ -115,7 +238,7 @@ async function getCourseById(courseId) {
  * Save student preferences
  */
 async function saveStudentPreferences(studentId, preferences) {
-    try {
+    return executeWithRetry(async () => {
         const pool = await getPool();
 
         // First, ensure student exists
@@ -164,18 +287,14 @@ async function saveStudentPreferences(studentId, preferences) {
             `);
 
         return { success: true, studentId, preferences };
-
-    } catch (error) {
-        console.error('Error saving preferences:', error);
-        throw new Error(`Database error: ${error.message}`);
-    }
+    });
 }
 
 /**
  * Get student preferences
  */
 async function getStudentPreferences(studentId) {
-    try {
+    return executeWithRetry(async () => {
         const pool = await getPool();
 
         const result = await pool.request()
@@ -204,11 +323,7 @@ async function getStudentPreferences(studentId) {
         }
 
         return null;
-
-    } catch (error) {
-        console.error('Error getting preferences:', error);
-        throw new Error(`Database error: ${error.message}`);
-    }
+    });
 }
 
 // =====================================

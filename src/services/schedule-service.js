@@ -43,10 +43,10 @@ const isAzurePausedError = (error) => {
 class ScheduleService {
     constructor() {
         this.userDbConfig = {
-            server: process.env.DB_SERVER || 'student-schedule.database.windows.net',
-            database: 'user-db',  // Always use user-db for schedules, NOT from env
-            user: process.env.DB_USER || 'sqladmin',
-            password: process.env.DB_PASSWORD || 'Wind060304@',
+            server: 'student-schedule.database.windows.net',
+            database: 'user-db',  // Always use user-db for schedules
+            user: 'sqladmin',
+            password: 'Wind060304@',
             options: {
                 encrypt: true,
                 enableArithAbort: true,

@@ -44,7 +44,7 @@ class ScheduleService {
     constructor() {
         this.userDbConfig = {
             server: 'student-schedule.database.windows.net',
-            database: 'user-db',  // Always use user-db for schedules
+            database: 'student-scheduler-db',  // Use same database as courses
             user: 'sqladmin',
             password: 'Wind060304@',
             options: {
@@ -163,14 +163,12 @@ class ScheduleService {
     }
 
     /**
-     * Get or create numeric UserId from email or string ID
+     * Get or create UserId from email
+     * Note: UserId in student-scheduler-db is NVARCHAR (stores email)
      */
     async getOrCreateUserId(userIdentifier, userData = {}) {
         return this.executeWithRetry(async (pool) => {
-            console.log('[getOrCreateUserId] Input:', { userIdentifier, userData });
-            
-            // Extract email from identifier (could be email or string ID like "user-123")
-            const email = userData.email || (userIdentifier.includes('@') ? userIdentifier : null);
+            const email = userData.email || userIdentifier;
             console.log('[getOrCreateUserId] Using email:', email);
             
             if (!email) {
@@ -188,153 +186,86 @@ class ScheduleService {
                 return userId;
             }
 
-            // Create new user if not exists
+            // Create new user if not exists - UserId is the email
             console.log('[getOrCreateUserId] Creating new user...');
-            const newUser = await pool.request()
+            await pool.request()
+                .input('userId', sql.NVarChar, email)
                 .input('email', sql.NVarChar, email)
                 .input('name', sql.NVarChar, userData.name || email.split('@')[0])
                 .input('studentId', sql.NVarChar, userData.studentId || null)
                 .input('role', sql.NVarChar, userData.role || 'Student')
                 .query(`
-                    INSERT INTO Users (Email, Name, StudentId, Role, CreatedAt, UpdatedAt)
-                    OUTPUT INSERTED.UserId
-                    VALUES (@email, @name, @studentId, @role, GETDATE(), GETDATE())
+                    INSERT INTO Users (UserId, Email, Name, StudentId, Role, CreatedAt)
+                    VALUES (@userId, @email, @name, @studentId, @role, GETDATE())
                 `);
 
-            const userId = newUser.recordset[0].UserId;
-            console.log('[getOrCreateUserId] Created new user:', userId);
-            return userId;
+            console.log('[getOrCreateUserId] Created new user:', email);
+            return email;
         }, 'getOrCreateUserId');
     }
 
     /**
      * Create new schedule for user
+     * Uses coursesJson column to store courses as JSON
      */
     async createSchedule(userIdentifier, scheduleName, courses, userData = {}) {
         return this.executeWithRetry(async (pool) => {
-            let numericUserId;
-            
-            // Get or create user ID using the same pool
-            const email = userData.email || (userIdentifier.includes('@') ? userIdentifier : null);
-            console.log('[createSchedule] Getting UserId for email:', email);
+            const email = userData.email || userIdentifier;
+            console.log('[createSchedule] Creating schedule for:', email);
             
             if (!email) {
                 throw new Error('Email is required');
             }
 
-            // Try to find existing user
+            // Ensure user exists
             const existingUser = await pool.request()
                 .input('email', sql.NVarChar, email)
                 .query('SELECT UserId FROM Users WHERE Email = @email');
 
-            if (existingUser.recordset.length > 0) {
-                numericUserId = existingUser.recordset[0].UserId;
-                console.log('[createSchedule] Found existing user ID:', numericUserId);
-            } else {
+            if (existingUser.recordset.length === 0) {
                 // Create new user
                 console.log('[createSchedule] Creating new user...');
-                const newUser = await pool.request()
+                await pool.request()
+                    .input('userId', sql.NVarChar, email)
                     .input('email', sql.NVarChar, email)
                     .input('name', sql.NVarChar, userData.name || email.split('@')[0])
                     .input('studentId', sql.NVarChar, userData.studentId || null)
                     .input('role', sql.NVarChar, userData.role || 'Student')
                     .query(`
-                        INSERT INTO Users (Email, Name, StudentId, Role, CreatedAt, UpdatedAt)
-                        OUTPUT INSERTED.UserId
-                        VALUES (@email, @name, @studentId, @role, GETDATE(), GETDATE())
+                        INSERT INTO Users (UserId, Email, Name, StudentId, Role, CreatedAt)
+                        VALUES (@userId, @email, @name, @studentId, @role, GETDATE())
                     `);
-
-                numericUserId = newUser.recordset[0].UserId;
-                console.log('[createSchedule] Created new user ID:', numericUserId);
+                console.log('[createSchedule] Created new user');
             }
-            
-            if (!numericUserId) {
-                throw new Error('Failed to get or create UserId - result is null/undefined');
-            }
-            
-            // Start transaction
-            const transaction = new sql.Transaction(pool);
-            await transaction.begin();
 
-            try {
-                // Calculate total credits
-                const totalCredits = courses.reduce((sum, course) => sum + (course.credits || 0), 0);
+            // Calculate total credits
+            const totalCredits = courses.reduce((sum, course) => sum + (course.credits || 0), 0);
 
-                // Insert into Schedules table
-                const scheduleResult = await transaction.request()
-                    .input('userId', sql.Int, numericUserId)
-                    .input('scheduleName', sql.NVarChar, scheduleName || `Thời khóa biểu ${new Date().toLocaleDateString('vi-VN')}`)
-                    .input('totalCredits', sql.Int, totalCredits)
-                    .query(`
-                        INSERT INTO Schedules (UserId, ScheduleName, TotalCredits, CreatedAt, UpdatedAt)
-                        OUTPUT INSERTED.ScheduleId
-                        VALUES (@userId, @scheduleName, @totalCredits, GETDATE(), GETDATE())
-                    `);
+            // Insert schedule with coursesJson
+            const scheduleResult = await pool.request()
+                .input('userId', sql.NVarChar, email)
+                .input('coursesJson', sql.NVarChar, JSON.stringify(courses))
+                .input('totalCredits', sql.Int, totalCredits)
+                .query(`
+                    INSERT INTO Schedules (userId, coursesJson, totalCredits, createdAt, updatedAt)
+                    OUTPUT INSERTED.id
+                    VALUES (@userId, @coursesJson, @totalCredits, GETDATE(), GETDATE())
+                `);
 
-                const scheduleId = scheduleResult.recordset[0].ScheduleId;
+            const scheduleId = scheduleResult.recordset[0].id;
+            console.log('[createSchedule] Created schedule:', scheduleId);
 
-                // Insert courses and create schedule details
-                for (const course of courses) {
-                    // First, check if course exists in Courses table
-                    const existingCourse = await transaction.request()
-                        .input('courseCode', sql.NVarChar, course.courseCode || `COURSE-${course.courseId || course.id}`)
-                        .query('SELECT CourseId FROM Courses WHERE CourseCode = @courseCode');
-
-                    let courseId;
-                    
-                    if (existingCourse.recordset.length > 0) {
-                        // Course exists, use existing ID
-                        courseId = existingCourse.recordset[0].CourseId;
-                    } else {
-                        // Course doesn't exist, insert it
-                        const newCourse = await transaction.request()
-                            .input('courseName', sql.NVarChar, course.courseName || course.name || 'Unknown Course')
-                            .input('courseCode', sql.NVarChar, course.courseCode || `COURSE-${course.courseId || course.id}`)
-                            .input('credits', sql.Int, course.credits || 0)
-                            .input('lecturer', sql.NVarChar, course.lecturer || course.instructor || null)
-                            .input('time', sql.NVarChar, course.time || course.schedule || null)
-                            .input('room', sql.NVarChar, course.room || null)
-                            .input('weeks', sql.NVarChar, course.weeks || null)
-                            .input('quantity', sql.Int, course.quantity || course.maxStudents || null)
-                            .query(`
-                                INSERT INTO Courses (CourseName, CourseCode, Credits, Lecturer, Time, Room, Weeks, Quantity, CreatedAt)
-                                OUTPUT INSERTED.CourseId
-                                VALUES (@courseName, @courseCode, @credits, @lecturer, @time, @room, @weeks, @quantity, GETDATE())
-                            `);
-                        
-                        courseId = newCourse.recordset[0].CourseId;
-                    }
-
-                    // Insert into ScheduleDetails
-                    await transaction.request()
-                        .input('scheduleId', sql.Int, scheduleId)
-                        .input('courseId', sql.Int, courseId)
-                        .query(`
-                            INSERT INTO ScheduleDetails (ScheduleId, CourseId, CreatedAt)
-                            VALUES (@scheduleId, @courseId, GETDATE())
-                        `);
-                }
-
-                // Commit transaction
-                await transaction.commit();
-
-                return {
-                    success: true,
+            return {
+                success: true,
+                scheduleId,
+                message: 'Tạo thời khóa biểu thành công!',
+                data: {
                     scheduleId,
-                    message: 'Tạo thời khóa biểu thành công!',
-                    data: {
-                        scheduleId,
-                        scheduleName,
-                        totalCredits,
-                        courseCount: courses.length
-                    }
-                };
-
-            } catch (error) {
-                // Rollback on error
-                await transaction.rollback();
-                throw error;
-            }
+                    scheduleName: scheduleName || `Thời khóa biểu ${new Date().toLocaleDateString('vi-VN')}`,
+                    totalCredits,
+                    courseCount: courses.length
+                }
+            };
         }, 'createSchedule');
     }
 
@@ -343,159 +274,124 @@ class ScheduleService {
      */
     async getUserSchedules(userIdentifier) {
         return this.executeWithRetry(async (pool) => {
-            // Get numeric UserId - note: this uses its own retry, so we call directly
-            let numericUserId;
-            
-            // Find user by email
             const email = userIdentifier.includes('@') ? userIdentifier : null;
-            if (email) {
-                const existingUser = await pool.request()
-                    .input('email', sql.NVarChar, email)
-                    .query('SELECT UserId FROM Users WHERE Email = @email');
-
-                if (existingUser.recordset.length > 0) {
-                    numericUserId = existingUser.recordset[0].UserId;
-                }
-            }
-
-            if (!numericUserId) {
-                return {
-                    success: true,
-                    schedules: []
-                };
+            
+            if (!email) {
+                return { success: true, schedules: [] };
             }
             
             const result = await pool.request()
-                .input('userId', sql.Int, numericUserId)
+                .input('userId', sql.NVarChar, email)
                 .query(`
                     SELECT 
-                        s.ScheduleId,
-                        s.ScheduleName,
-                        s.TotalCredits,
-                        s.CreatedAt,
-                        s.UpdatedAt,
-                        COUNT(sd.DetailId) as CourseCount
-                    FROM Schedules s
-                    LEFT JOIN ScheduleDetails sd ON s.ScheduleId = sd.ScheduleId
-                    WHERE s.UserId = @userId
-                    GROUP BY s.ScheduleId, s.ScheduleName, s.TotalCredits, s.CreatedAt, s.UpdatedAt
-                    ORDER BY s.CreatedAt DESC
+                        id as scheduleId,
+                        userId,
+                        coursesJson,
+                        totalCredits,
+                        createdAt,
+                        updatedAt
+                    FROM Schedules
+                    WHERE userId = @userId
+                    ORDER BY createdAt DESC
                 `);
+
+            // Parse coursesJson for each schedule
+            const schedules = result.recordset.map(s => ({
+                ...s,
+                courses: JSON.parse(s.coursesJson || '[]'),
+                courseCount: JSON.parse(s.coursesJson || '[]').length
+            }));
 
             return {
                 success: true,
-                schedules: result.recordset
+                schedules
             };
         }, 'getUserSchedules');
     }
 
     /**
-     * Get schedule details with courses
+     * Get schedule details
      */
     async getScheduleDetails(scheduleId) {
         return this.executeWithRetry(async (pool) => {
-            // Get schedule info
-            const scheduleResult = await pool.request()
-                .input('scheduleId', sql.Int, scheduleId)
-                .query(`
-                    SELECT * FROM Schedules WHERE ScheduleId = @scheduleId
-                `);
-
-            if (scheduleResult.recordset.length === 0) {
-                throw new Error('Schedule not found');
-            }
-
-            // Get courses in schedule
-            const coursesResult = await pool.request()
+            const result = await pool.request()
                 .input('scheduleId', sql.Int, scheduleId)
                 .query(`
                     SELECT 
-                        c.*,
-                        sd.CreatedAt as AddedAt
-                    FROM ScheduleDetails sd
-                    INNER JOIN Courses c ON sd.CourseId = c.CourseId
-                    WHERE sd.ScheduleId = @scheduleId
+                        id as scheduleId,
+                        userId,
+                        coursesJson,
+                        totalCredits,
+                        createdAt,
+                        updatedAt
+                    FROM Schedules
+                    WHERE id = @scheduleId
                 `);
 
+            if (result.recordset.length === 0) {
+                return { success: false, error: 'Schedule not found' };
+            }
+
+            const schedule = result.recordset[0];
             return {
                 success: true,
-                schedule: scheduleResult.recordset[0],
-                courses: coursesResult.recordset
+                schedule: {
+                    ...schedule,
+                    courses: JSON.parse(schedule.coursesJson || '[]')
+                }
             };
         }, 'getScheduleDetails');
     }
 
     /**
-     * Update schedule
+     * Delete a schedule
      */
-    async updateSchedule(scheduleId, scheduleName, courses) {
+    async deleteSchedule(scheduleId, userIdentifier) {
         return this.executeWithRetry(async (pool) => {
-            const transaction = new sql.Transaction(pool);
-            await transaction.begin();
+            const email = userIdentifier.includes('@') ? userIdentifier : null;
+            
+            const result = await pool.request()
+                .input('scheduleId', sql.Int, scheduleId)
+                .input('userId', sql.NVarChar, email)
+                .query(`
+                    DELETE FROM Schedules 
+                    WHERE id = @scheduleId AND userId = @userId
+                `);
 
-            try {
-                // Calculate total credits
-                const totalCredits = courses.reduce((sum, course) => sum + (course.credits || 0), 0);
-
-                // Update schedule info
-                await transaction.request()
-                    .input('scheduleId', sql.Int, scheduleId)
-                    .input('scheduleName', sql.NVarChar, scheduleName)
-                    .input('totalCredits', sql.Int, totalCredits)
-                    .query(`
-                        UPDATE Schedules 
-                        SET ScheduleName = @scheduleName,
-                            TotalCredits = @totalCredits,
-                            UpdatedAt = GETDATE()
-                        WHERE ScheduleId = @scheduleId
-                    `);
-
-                // Delete old schedule details
-                await transaction.request()
-                    .input('scheduleId', sql.Int, scheduleId)
-                    .query(`DELETE FROM ScheduleDetails WHERE ScheduleId = @scheduleId`);
-
-                // Insert new courses
-                for (const course of courses) {
-                    await transaction.request()
-                        .input('scheduleId', sql.Int, scheduleId)
-                        .input('courseId', sql.Int, course.courseId || course.id)
-                        .query(`
-                            INSERT INTO ScheduleDetails (ScheduleId, CourseId, CreatedAt)
-                            VALUES (@scheduleId, @courseId, GETDATE())
-                        `);
-                }
-
-                await transaction.commit();
-
-                return {
-                    success: true,
-                    message: 'Cập nhật thời khóa biểu thành công!'
-                };
-
-            } catch (error) {
-                await transaction.rollback();
-                throw error;
-            }
-        }, 'updateSchedule');
+            return {
+                success: result.rowsAffected[0] > 0,
+                message: result.rowsAffected[0] > 0 ? 'Đã xóa thời khóa biểu' : 'Không tìm thấy thời khóa biểu'
+            };
+        }, 'deleteSchedule');
     }
 
     /**
-     * Delete schedule
+     * Update a schedule
      */
-    async deleteSchedule(scheduleId) {
+    async updateSchedule(scheduleId, userIdentifier, courses) {
         return this.executeWithRetry(async (pool) => {
-            await pool.request()
+            const email = userIdentifier.includes('@') ? userIdentifier : null;
+            const totalCredits = courses.reduce((sum, course) => sum + (course.credits || 0), 0);
+            
+            const result = await pool.request()
                 .input('scheduleId', sql.Int, scheduleId)
-                .query(`DELETE FROM Schedules WHERE ScheduleId = @scheduleId`);
+                .input('userId', sql.NVarChar, email)
+                .input('coursesJson', sql.NVarChar, JSON.stringify(courses))
+                .input('totalCredits', sql.Int, totalCredits)
+                .query(`
+                    UPDATE Schedules 
+                    SET coursesJson = @coursesJson, 
+                        totalCredits = @totalCredits,
+                        updatedAt = GETDATE()
+                    WHERE id = @scheduleId AND userId = @userId
+                `);
 
             return {
-                success: true,
-                message: 'Xóa thời khóa biểu thành công!'
+                success: result.rowsAffected[0] > 0,
+                message: result.rowsAffected[0] > 0 ? 'Đã cập nhật thời khóa biểu' : 'Không tìm thấy thời khóa biểu'
             };
-        }, 'deleteSchedule');
+        }, 'updateSchedule');
     }
 }
 
 module.exports = { ScheduleService };
-// Redeploy: 1766169356

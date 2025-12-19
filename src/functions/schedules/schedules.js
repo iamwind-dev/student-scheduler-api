@@ -34,7 +34,10 @@ const getCorsHeaders = (request) => ({
 // Simple response helpers
 const jsonResponse = (status, data, headers) => ({
     status,
-    headers,
+    headers: {
+        'Content-Type': 'application/json',
+        ...headers
+    },
     body: JSON.stringify(data)
 });
 

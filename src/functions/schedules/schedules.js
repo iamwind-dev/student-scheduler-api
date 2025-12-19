@@ -5,10 +5,8 @@
 
 const { app } = require('@azure/functions');
 const { ScheduleService } = require('../../services/schedule-service');
-const { ResponseHelper } = require('../../utils/response-helper');
 
 const scheduleService = new ScheduleService();
-const response = new ResponseHelper();
 
 // Dynamic CORS origin based on environment
 const getAllowedOrigin = (request) => {
@@ -22,15 +20,22 @@ const getAllowedOrigin = (request) => {
     if (allowedOrigins.includes(origin)) {
         return origin;
     }
-    // Default to production frontend if origin not in list
     return 'https://student-schedule-frontend.azurewebsites.net';
 };
 
 const getCorsHeaders = (request) => ({
+    'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': getAllowedOrigin(request),
     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type, Authorization',
     'Access-Control-Allow-Credentials': 'true'
+});
+
+// Simple response helpers
+const jsonResponse = (status, data, headers) => ({
+    status,
+    headers,
+    body: JSON.stringify(data)
 });
 
 /**
@@ -55,10 +60,10 @@ app.http('schedules-create', {
             context.log('[schedules-create] Request:', { userId, scheduleName, courseCount: courses?.length });
 
             if (!userId || !courses || !Array.isArray(courses) || courses.length === 0) {
-                return {
-                    ...response.validationError(['userId and courses array are required']),
-                    headers: corsHeaders
-                };
+                return jsonResponse(400, {
+                    success: false,
+                    error: 'userId and courses array are required'
+                }, corsHeaders);
             }
 
             // Pass user data for creating user in DB if needed
@@ -67,17 +72,19 @@ app.http('schedules-create', {
 
             context.log('[schedules-create] Success:', result);
 
-            return {
-                ...response.success(result, 'Schedule created successfully'),
-                headers: corsHeaders
-            };
+            return jsonResponse(200, {
+                success: true,
+                data: result,
+                message: 'Schedule created successfully'
+            }, corsHeaders);
 
         } catch (error) {
-            context.log.error('[schedules-create] Error:', error);
-            return {
-                ...response.serverError('Failed to create schedule', error.message),
-                headers: corsHeaders
-            };
+            context.log.error('[schedules-create] Error:', error.message, error.stack);
+            return jsonResponse(500, {
+                success: false,
+                error: 'Failed to create schedule',
+                details: error.message
+            }, corsHeaders);
         }
     }
 });
@@ -101,26 +108,28 @@ app.http('schedules-get-by-user', {
             const userId = request.params.userId;
 
             if (!userId) {
-                return {
-                    ...response.validationError(['userId is required']),
-                    headers: corsHeaders
-                };
+                return jsonResponse(400, {
+                    success: false,
+                    error: 'userId is required'
+                }, corsHeaders);
             }
 
             // Can accept email or numeric ID
             const result = await scheduleService.getUserSchedules(userId);
 
-            return {
-                ...response.success(result, 'Schedules retrieved successfully'),
-                headers: corsHeaders
-            };
+            return jsonResponse(200, {
+                success: true,
+                data: result,
+                message: 'Schedules retrieved successfully'
+            }, corsHeaders);
 
         } catch (error) {
-            context.log.error('Get user schedules error:', error);
-            return {
-                ...response.serverError('Failed to get schedules', error.message),
-                headers: corsHeaders
-            };
+            context.log.error('Get user schedules error:', error.message);
+            return jsonResponse(500, {
+                success: false,
+                error: 'Failed to get schedules',
+                details: error.message
+            }, corsHeaders);
         }
     }
 });
@@ -144,25 +153,27 @@ app.http('schedules-get-details', {
             const scheduleId = request.params.scheduleId;
 
             if (!scheduleId) {
-                return {
-                    ...response.validationError(['scheduleId is required']),
-                    headers: corsHeaders
-                };
+                return jsonResponse(400, {
+                    success: false,
+                    error: 'scheduleId is required'
+                }, corsHeaders);
             }
 
             const result = await scheduleService.getScheduleDetails(parseInt(scheduleId));
 
-            return {
-                ...response.success(result, 'Schedule details retrieved successfully'),
-                headers: corsHeaders
-            };
+            return jsonResponse(200, {
+                success: true,
+                data: result,
+                message: 'Schedule details retrieved successfully'
+            }, corsHeaders);
 
         } catch (error) {
-            context.log.error('Get schedule details error:', error);
-            return {
-                ...response.serverError('Failed to get schedule details', error.message),
-                headers: corsHeaders
-            };
+            context.log.error('Get schedule details error:', error.message);
+            return jsonResponse(500, {
+                success: false,
+                error: 'Failed to get schedule details',
+                details: error.message
+            }, corsHeaders);
         }
     }
 });
@@ -188,25 +199,27 @@ app.http('schedules-update', {
             const { scheduleName, courses } = body;
 
             if (!scheduleId || !courses || !Array.isArray(courses)) {
-                return {
-                    ...response.validationError(['scheduleId and courses array are required']),
-                    headers: corsHeaders
-                };
+                return jsonResponse(400, {
+                    success: false,
+                    error: 'scheduleId and courses array are required'
+                }, corsHeaders);
             }
 
             const result = await scheduleService.updateSchedule(parseInt(scheduleId), scheduleName, courses);
 
-            return {
-                ...response.success(result, 'Schedule updated successfully'),
-                headers: corsHeaders
-            };
+            return jsonResponse(200, {
+                success: true,
+                data: result,
+                message: 'Schedule updated successfully'
+            }, corsHeaders);
 
         } catch (error) {
-            context.log.error('Update schedule error:', error);
-            return {
-                ...response.serverError('Failed to update schedule', error.message),
-                headers: corsHeaders
-            };
+            context.log.error('Update schedule error:', error.message);
+            return jsonResponse(500, {
+                success: false,
+                error: 'Failed to update schedule',
+                details: error.message
+            }, corsHeaders);
         }
     }
 });
@@ -230,25 +243,27 @@ app.http('schedules-delete', {
             const scheduleId = request.params.scheduleId;
 
             if (!scheduleId) {
-                return {
-                    ...response.validationError(['scheduleId is required']),
-                    headers: corsHeaders
-                };
+                return jsonResponse(400, {
+                    success: false,
+                    error: 'scheduleId is required'
+                }, corsHeaders);
             }
 
             const result = await scheduleService.deleteSchedule(parseInt(scheduleId));
 
-            return {
-                ...response.success(result, 'Schedule deleted successfully'),
-                headers: corsHeaders
-            };
+            return jsonResponse(200, {
+                success: true,
+                data: result,
+                message: 'Schedule deleted successfully'
+            }, corsHeaders);
 
         } catch (error) {
-            context.log.error('Delete schedule error:', error);
-            return {
-                ...response.serverError('Failed to delete schedule', error.message),
-                headers: corsHeaders
-            };
+            context.log.error('Delete schedule error:', error.message);
+            return jsonResponse(500, {
+                success: false,
+                error: 'Failed to delete schedule',
+                details: error.message
+            }, corsHeaders);
         }
     }
 });

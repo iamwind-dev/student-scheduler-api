@@ -13,14 +13,43 @@
 ✅ Both databases connected successfully
 
 [API] User logged in: langph.22it@vku.udn.vn
-[API] User logged in: langph.22it@vku.udn.vn
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
 [API] Loaded 694 courses from Azure SQL
 [API] Loaded 694 courses from Azure SQL
 [API] Loaded 694 courses from Azure SQL
 [API] Loaded 694 courses from Azure SQL
 [API] Creating schedule for user: langph.22it@vku.udn.vn
-[ScheduleService] Connection attempt 1/5 to user-db...
-[ScheduleService] ✅ Connected to user-db
-[createSchedule] Getting UserId for email: langph.22it@vku.udn.vn
-[createSchedule] Found existing user ID: 3
-[API] Schedule created successfully: 35
+[ScheduleService] Connection attempt 1/5 to student-scheduler-db...
+[ScheduleService] ✅ Connected to student-scheduler-db
+[createSchedule] Creating schedule for: langph.22it@vku.udn.vn
+[createSchedule] Created schedule: 2
+[API] Schedule created successfully: 2
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] Getting schedule details: NaN
+[API] Getting schedule details: NaN
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Creating schedule for user: langph.22it@vku.udn.vn
+[createSchedule] Creating schedule for: langph.22it@vku.udn.vn
+[createSchedule] Created schedule: 4
+[API] Schedule created successfully: 4
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] Getting schedule details: NaN
+[API] Getting schedule details: NaN
+[API] User logged in: langph.22it@vku.udn.vn
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Loaded 694 courses from Azure SQL
+[API] Creating schedule for user: langph.22it@vku.udn.vn
+[createSchedule] Creating schedule for: langph.22it@vku.udn.vn
+[createSchedule] Created schedule: 5
+[API] Schedule created successfully: 5
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] Getting schedules for user: langph.22it@vku.udn.vn
+[API] User logged in: langph.22it@vku.udn.vn

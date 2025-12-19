@@ -6,7 +6,9 @@
 const ALLOWED_ORIGINS = [
     'http://localhost:5173',
     'http://localhost:3000',
-    'https://student-schedule-frontend.azurewebsites.net'
+    'http://127.0.0.1:5173',
+    'https://student-schedule-frontend.azurewebsites.net',
+    '*'  // Allow all origins for development
 ];
 
 /**
@@ -16,6 +18,11 @@ const ALLOWED_ORIGINS = [
  */
 function getAllowedOrigin(request) {
     const origin = request.headers.get('origin') || '';
+    
+    // Allow all origins for development
+    if (ALLOWED_ORIGINS.includes('*')) {
+        return origin || '*';
+    }
     
     if (ALLOWED_ORIGINS.includes(origin)) {
         return origin;

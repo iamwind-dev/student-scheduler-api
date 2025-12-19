@@ -25,7 +25,7 @@ app.http('schedules-save', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'POST, GET, DELETE, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type',
                     'Access-Control-Allow-Credentials': 'true'
@@ -53,7 +53,7 @@ app.http('schedules-save', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Credentials': 'true',
                     'Content-Type': 'application/json'
                 },
@@ -69,7 +69,7 @@ app.http('schedules-save', {
             return {
                 status: 500,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
@@ -90,7 +90,7 @@ app.http('schedules-get', {
             return {
                 status: 200,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Methods': 'GET, OPTIONS',
                     'Access-Control-Allow-Headers': 'Content-Type',
                     'Access-Control-Allow-Credentials': 'true'
@@ -119,7 +119,7 @@ app.http('schedules-get', {
                 return {
                     status: 200,
                     headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Access-Control-Allow-Origin': '*',
                         'Access-Control-Allow-Credentials': 'true',
                         'Content-Type': 'application/json'
                     },
@@ -138,7 +138,7 @@ app.http('schedules-get', {
                 return {
                     status: 404,
                     headers: {
-                        'Access-Control-Allow-Origin': 'http://localhost:5173',
+                        'Access-Control-Allow-Origin': '*',
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
@@ -154,7 +154,7 @@ app.http('schedules-get', {
             return {
                 status: 500,
                 headers: {
-                    'Access-Control-Allow-Origin': 'http://localhost:5173',
+                    'Access-Control-Allow-Origin': '*',
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
